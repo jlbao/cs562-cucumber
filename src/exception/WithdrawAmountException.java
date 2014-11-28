@@ -2,7 +2,7 @@ package exception;
 
 public class WithdrawAmountException extends AccountException {
 
-	public WithdrawAmountException(String message) {
-		super(message);
+	public WithdrawAmountException() {
+		super("The withdraw amount is not a multiple of 10");
 	}
 }

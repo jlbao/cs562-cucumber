@@ -1,4 +1,350 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("cash_withdrawal.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("cash_deposit.feature");
+formatter.feature({
+  "id": "cash-deposit",
+  "description": "",
+  "name": "Cash Deposit",
+  "keyword": "Feature",
+  "line": 1
+});
+formatter.scenarioOutline({
+  "id": "cash-deposit;successful-deposit-once-from-an-account",
+  "description": "",
+  "name": "Successful deposit once from an account",
+  "keyword": "Scenario Outline",
+  "line": 3,
+  "type": "scenario_outline"
+});
+formatter.step({
+  "name": "I have a starting balance of $\u003cstart_balance\u003e in my account",
+  "keyword": "Given ",
+  "line": 4
+});
+formatter.step({
+  "name": "I deposit $\u003camount\u003e",
+  "keyword": "When ",
+  "line": 5
+});
+formatter.step({
+  "name": "my balance should be $\u003cend_balance\u003e",
+  "keyword": "Then ",
+  "line": 6
+});
+formatter.examples({
+  "id": "cash-deposit;successful-deposit-once-from-an-account;",
+  "description": "",
+  "name": "",
+  "keyword": "Examples",
+  "line": 8,
+  "rows": [
+    {
+      "id": "cash-deposit;successful-deposit-once-from-an-account;;1",
+      "cells": [
+        "start_balance",
+        "amount",
+        "end_balance"
+      ],
+      "line": 9
+    },
+    {
+      "id": "cash-deposit;successful-deposit-once-from-an-account;;2",
+      "cells": [
+        "100.00",
+        "20.1",
+        "120.1"
+      ],
+      "line": 10
+    },
+    {
+      "id": "cash-deposit;successful-deposit-once-from-an-account;;3",
+      "cells": [
+        "50.00",
+        "50.89",
+        "100.89"
+      ],
+      "line": 11
+    }
+  ]
+});
+formatter.scenario({
+  "id": "cash-deposit;successful-deposit-once-from-an-account;;2",
+  "description": "",
+  "name": "Successful deposit once from an account",
+  "keyword": "Scenario Outline",
+  "line": 10,
+  "type": "scenario"
+});
+formatter.step({
+  "name": "I have a starting balance of $100.00 in my account",
+  "keyword": "Given ",
+  "line": 4,
+  "matchedColumns": [
+    0
+  ]
+});
+formatter.step({
+  "name": "I deposit $20.1",
+  "keyword": "When ",
+  "line": 5,
+  "matchedColumns": [
+    1
+  ]
+});
+formatter.step({
+  "name": "my balance should be $120.1",
+  "keyword": "Then ",
+  "line": 6,
+  "matchedColumns": [
+    2
+  ]
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "100.00",
+      "offset": 30
+    }
+  ],
+  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
+});
+formatter.result({
+  "duration": 148479000,
+  "status": "passed"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "120.1",
+      "offset": 22
+    }
+  ],
+  "location": "CashWithdrawTest.my_balance_should_be_$(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.scenario({
+  "id": "cash-deposit;successful-deposit-once-from-an-account;;3",
+  "description": "",
+  "name": "Successful deposit once from an account",
+  "keyword": "Scenario Outline",
+  "line": 11,
+  "type": "scenario"
+});
+formatter.step({
+  "name": "I have a starting balance of $50.00 in my account",
+  "keyword": "Given ",
+  "line": 4,
+  "matchedColumns": [
+    0
+  ]
+});
+formatter.step({
+  "name": "I deposit $50.89",
+  "keyword": "When ",
+  "line": 5,
+  "matchedColumns": [
+    1
+  ]
+});
+formatter.step({
+  "name": "my balance should be $100.89",
+  "keyword": "Then ",
+  "line": 6,
+  "matchedColumns": [
+    2
+  ]
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "50.00",
+      "offset": 30
+    }
+  ],
+  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
+});
+formatter.result({
+  "duration": 184000,
+  "status": "passed"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "100.89",
+      "offset": 22
+    }
+  ],
+  "location": "CashWithdrawTest.my_balance_should_be_$(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.scenarioOutline({
+  "id": "cash-deposit;failed-deposit-from-an-account",
+  "description": "",
+  "name": "Failed deposit from an account",
+  "keyword": "Scenario Outline",
+  "line": 14,
+  "type": "scenario_outline"
+});
+formatter.step({
+  "name": "I have a starting balance of $100 in my account",
+  "keyword": "Given ",
+  "line": 15
+});
+formatter.step({
+  "name": "I deposit $\u003camount\u003e",
+  "keyword": "When ",
+  "line": 16
+});
+formatter.step({
+  "name": "my balance should be $\u003cend_balance\u003e",
+  "keyword": "Then ",
+  "line": 17
+});
+formatter.examples({
+  "id": "cash-deposit;failed-deposit-from-an-account;",
+  "description": "",
+  "name": "",
+  "keyword": "Examples",
+  "line": 19,
+  "rows": [
+    {
+      "id": "cash-deposit;failed-deposit-from-an-account;;1",
+      "cells": [
+        "start_balance",
+        "amount",
+        "end_balance"
+      ],
+      "line": 20
+    },
+    {
+      "id": "cash-deposit;failed-deposit-from-an-account;;2",
+      "cells": [
+        "100.00",
+        "20.1",
+        "120.1"
+      ],
+      "line": 21
+    },
+    {
+      "id": "cash-deposit;failed-deposit-from-an-account;;3",
+      "cells": [
+        "50.00",
+        "50.89",
+        "100.89"
+      ],
+      "line": 22
+    }
+  ]
+});
+formatter.scenario({
+  "id": "cash-deposit;failed-deposit-from-an-account;;2",
+  "description": "",
+  "name": "Failed deposit from an account",
+  "keyword": "Scenario Outline",
+  "line": 21,
+  "type": "scenario"
+});
+formatter.step({
+  "name": "I have a starting balance of $100 in my account",
+  "keyword": "Given ",
+  "line": 15
+});
+formatter.step({
+  "name": "I deposit $20.1",
+  "keyword": "When ",
+  "line": 16,
+  "matchedColumns": [
+    1
+  ]
+});
+formatter.step({
+  "name": "my balance should be $120.1",
+  "keyword": "Then ",
+  "line": 17,
+  "matchedColumns": [
+    2
+  ]
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "120.1",
+      "offset": 22
+    }
+  ],
+  "location": "CashWithdrawTest.my_balance_should_be_$(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.scenario({
+  "id": "cash-deposit;failed-deposit-from-an-account;;3",
+  "description": "",
+  "name": "Failed deposit from an account",
+  "keyword": "Scenario Outline",
+  "line": 22,
+  "type": "scenario"
+});
+formatter.step({
+  "name": "I have a starting balance of $100 in my account",
+  "keyword": "Given ",
+  "line": 15
+});
+formatter.step({
+  "name": "I deposit $50.89",
+  "keyword": "When ",
+  "line": 16,
+  "matchedColumns": [
+    1
+  ]
+});
+formatter.step({
+  "name": "my balance should be $100.89",
+  "keyword": "Then ",
+  "line": 17,
+  "matchedColumns": [
+    2
+  ]
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "100.89",
+      "offset": 22
+    }
+  ],
+  "location": "CashWithdrawTest.my_balance_should_be_$(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.uri("cash_withdrawal.feature");
 formatter.feature({
   "id": "cash-withdrawal",
   "description": "",
@@ -11,30 +357,30 @@ formatter.scenarioOutline({
   "description": "",
   "name": "Successful withdrawal from an account",
   "keyword": "Scenario Outline",
-  "line": 2,
+  "line": 3,
   "type": "scenario_outline"
 });
 formatter.step({
   "name": "I have a starting balance of $\u003cstart_balance\u003e in my account",
   "keyword": "Given ",
-  "line": 3
+  "line": 4
 });
 formatter.step({
   "name": "I withdraw $\u003camount\u003e",
   "keyword": "When ",
-  "line": 4
+  "line": 5
 });
 formatter.step({
   "name": "$\u003camount\u003e should be dispensed",
   "keyword": "Then ",
-  "line": 5
+  "line": 6
 });
 formatter.examples({
   "id": "cash-withdrawal;successful-withdrawal-from-an-account;",
   "description": "",
   "name": "",
   "keyword": "Examples",
-  "line": 7,
+  "line": 8,
   "rows": [
     {
       "id": "cash-withdrawal;successful-withdrawal-from-an-account;;1",
@@ -42,7 +388,7 @@ formatter.examples({
         "start_balance",
         "amount"
       ],
-      "line": 8
+      "line": 9
     },
     {
       "id": "cash-withdrawal;successful-withdrawal-from-an-account;;2",
@@ -50,7 +396,7 @@ formatter.examples({
         "100.00",
         "20"
       ],
-      "line": 9
+      "line": 10
     },
     {
       "id": "cash-withdrawal;successful-withdrawal-from-an-account;;3",
@@ -58,7 +404,7 @@ formatter.examples({
         "50.00",
         "50"
       ],
-      "line": 10
+      "line": 11
     }
   ]
 });
@@ -67,13 +413,13 @@ formatter.scenario({
   "description": "",
   "name": "Successful withdrawal from an account",
   "keyword": "Scenario Outline",
-  "line": 9,
+  "line": 10,
   "type": "scenario"
 });
 formatter.step({
   "name": "I have a starting balance of $100.00 in my account",
   "keyword": "Given ",
-  "line": 3,
+  "line": 4,
   "matchedColumns": [
     0
   ]
@@ -81,7 +427,7 @@ formatter.step({
 formatter.step({
   "name": "I withdraw $20",
   "keyword": "When ",
-  "line": 4,
+  "line": 5,
   "matchedColumns": [
     1
   ]
@@ -89,7 +435,7 @@ formatter.step({
 formatter.step({
   "name": "$20 should be dispensed",
   "keyword": "Then ",
-  "line": 5,
+  "line": 6,
   "matchedColumns": [
     1
   ]
@@ -97,18 +443,14 @@ formatter.step({
 formatter.match({
   "arguments": [
     {
-      "val": "100",
+      "val": "100.00",
       "offset": 30
-    },
-    {
-      "val": "00",
-      "offset": 34
     }
   ],
-  "location": "WithdrawTest.i_have_a_starting_balance_of_$_in_my_account(int,int)"
+  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
 });
 formatter.result({
-  "duration": 138168000,
+  "duration": 147000,
   "status": "passed"
 });
 formatter.match({
@@ -118,10 +460,10 @@ formatter.match({
       "offset": 12
     }
   ],
-  "location": "WithdrawTest.i_withdraw_$(int)"
+  "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 152000,
+  "duration": 403000,
   "status": "passed"
 });
 formatter.match({
@@ -131,10 +473,10 @@ formatter.match({
       "offset": 1
     }
   ],
-  "location": "WithdrawTest.$_should_be_dispensed(int)"
+  "location": "CashWithdrawTest.$_should_be_dispensed(int)"
 });
 formatter.result({
-  "duration": 128000,
+  "duration": 2327000,
   "status": "passed"
 });
 formatter.scenario({
@@ -142,13 +484,13 @@ formatter.scenario({
   "description": "",
   "name": "Successful withdrawal from an account",
   "keyword": "Scenario Outline",
-  "line": 10,
+  "line": 11,
   "type": "scenario"
 });
 formatter.step({
   "name": "I have a starting balance of $50.00 in my account",
   "keyword": "Given ",
-  "line": 3,
+  "line": 4,
   "matchedColumns": [
     0
   ]
@@ -156,7 +498,7 @@ formatter.step({
 formatter.step({
   "name": "I withdraw $50",
   "keyword": "When ",
-  "line": 4,
+  "line": 5,
   "matchedColumns": [
     1
   ]
@@ -164,7 +506,7 @@ formatter.step({
 formatter.step({
   "name": "$50 should be dispensed",
   "keyword": "Then ",
-  "line": 5,
+  "line": 6,
   "matchedColumns": [
     1
   ]
@@ -172,18 +514,14 @@ formatter.step({
 formatter.match({
   "arguments": [
     {
-      "val": "50",
+      "val": "50.00",
       "offset": 30
-    },
-    {
-      "val": "00",
-      "offset": 33
     }
   ],
-  "location": "WithdrawTest.i_have_a_starting_balance_of_$_in_my_account(int,int)"
+  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
 });
 formatter.result({
-  "duration": 236000,
+  "duration": 186000,
   "status": "passed"
 });
 formatter.match({
@@ -193,10 +531,10 @@ formatter.match({
       "offset": 12
     }
   ],
-  "location": "WithdrawTest.i_withdraw_$(int)"
+  "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 274000,
+  "duration": 97000,
   "status": "passed"
 });
 formatter.match({
@@ -206,10 +544,10 @@ formatter.match({
       "offset": 1
     }
   ],
-  "location": "WithdrawTest.$_should_be_dispensed(int)"
+  "location": "CashWithdrawTest.$_should_be_dispensed(int)"
 });
 formatter.result({
-  "duration": 140000,
+  "duration": 85000,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -217,40 +555,40 @@ formatter.scenarioOutline({
   "description": "",
   "name": "Withdraw cash successfully twice",
   "keyword": "Scenario Outline",
-  "line": 12,
+  "line": 13,
   "type": "scenario_outline"
 });
 formatter.step({
-  "name": "that I have a starting balance of $\u003cstart_balance\u003e in my account",
+  "name": "I have a starting balance of $\u003cstart_balance\u003e in my account",
   "keyword": "Given ",
-  "line": 13
+  "line": 14
 });
 formatter.step({
   "name": "I withdraw $\u003camount1\u003e",
   "keyword": "When ",
-  "line": 14
+  "line": 15
 });
 formatter.step({
   "name": "I withdraw $\u003camount2\u003e",
   "keyword": "And ",
-  "line": 15
+  "line": 16
 });
 formatter.step({
   "name": "I should have received $\u003ccash\u003e",
   "keyword": "Then ",
-  "line": 16
+  "line": 17
 });
 formatter.step({
   "name": "my balance should be $\u003cend_balance\u003e",
   "keyword": "And ",
-  "line": 17
+  "line": 18
 });
 formatter.examples({
   "id": "cash-withdrawal;withdraw-cash-successfully-twice;",
   "description": "",
   "name": "",
   "keyword": "Examples",
-  "line": 19,
+  "line": 20,
   "rows": [
     {
       "id": "cash-withdrawal;withdraw-cash-successfully-twice;;1",
@@ -258,9 +596,10 @@ formatter.examples({
         "start_balance",
         "amount1",
         "amount2",
+        "cash",
         "end_balance"
       ],
-      "line": 20
+      "line": 21
     },
     {
       "id": "cash-withdrawal;withdraw-cash-successfully-twice;;2",
@@ -268,9 +607,10 @@ formatter.examples({
         "100.00",
         "20",
         "40",
+        "60",
         "40.00"
       ],
-      "line": 21
+      "line": 22
     },
     {
       "id": "cash-withdrawal;withdraw-cash-successfully-twice;;3",
@@ -278,9 +618,10 @@ formatter.examples({
         "50.00",
         "30",
         "20",
+        "50",
         "0.00"
       ],
-      "line": 22
+      "line": 23
     },
     {
       "id": "cash-withdrawal;withdraw-cash-successfully-twice;;4",
@@ -288,9 +629,10 @@ formatter.examples({
         "51.50",
         "30",
         "20",
+        "50",
         "1.50"
       ],
-      "line": 23
+      "line": 24
     }
   ]
 });
@@ -299,13 +641,13 @@ formatter.scenario({
   "description": "",
   "name": "Withdraw cash successfully twice",
   "keyword": "Scenario Outline",
-  "line": 21,
+  "line": 22,
   "type": "scenario"
 });
 formatter.step({
-  "name": "that I have a starting balance of $100.00 in my account",
+  "name": "I have a starting balance of $100.00 in my account",
   "keyword": "Given ",
-  "line": 13,
+  "line": 14,
   "matchedColumns": [
     0
   ]
@@ -313,7 +655,7 @@ formatter.step({
 formatter.step({
   "name": "I withdraw $20",
   "keyword": "When ",
-  "line": 14,
+  "line": 15,
   "matchedColumns": [
     1
   ]
@@ -321,39 +663,38 @@ formatter.step({
 formatter.step({
   "name": "I withdraw $40",
   "keyword": "And ",
-  "line": 15,
+  "line": 16,
   "matchedColumns": [
     2
   ]
 });
 formatter.step({
-  "name": "I should have received $\u003ccash\u003e",
+  "name": "I should have received $60",
   "keyword": "Then ",
-  "line": 16
-});
-formatter.step({
-  "name": "my balance should be $40.00",
-  "keyword": "And ",
   "line": 17,
   "matchedColumns": [
     3
   ]
 });
+formatter.step({
+  "name": "my balance should be $40.00",
+  "keyword": "And ",
+  "line": 18,
+  "matchedColumns": [
+    4
+  ]
+});
 formatter.match({
   "arguments": [
     {
-      "val": "100",
-      "offset": 35
-    },
-    {
-      "val": "00",
-      "offset": 39
+      "val": "100.00",
+      "offset": 30
     }
   ],
-  "location": "WithdrawTest.that_I_have_a_starting_balance_of_$_in_my_account(int,int)"
+  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
 });
 formatter.result({
-  "duration": 256000,
+  "duration": 121000,
   "status": "passed"
 });
 formatter.match({
@@ -363,10 +704,10 @@ formatter.match({
       "offset": 12
     }
   ],
-  "location": "WithdrawTest.i_withdraw_$(int)"
+  "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 169000,
+  "duration": 85000,
   "status": "passed"
 });
 formatter.match({
@@ -376,34 +717,36 @@ formatter.match({
       "offset": 12
     }
   ],
-  "location": "WithdrawTest.i_withdraw_$(int)"
+  "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 144000,
-  "status": "passed"
-});
-formatter.match({
-  "location": "WithdrawTest.i_should_have_received_$_cash()"
-});
-formatter.result({
-  "duration": 40000,
+  "duration": 87000,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "40",
-      "offset": 22
-    },
-    {
-      "val": "00",
-      "offset": 25
+      "val": "60",
+      "offset": 24
     }
   ],
-  "location": "WithdrawTest.my_balance_should_be_$(int,int)"
+  "location": "CashWithdrawTest.i_should_have_received_$(int)"
 });
 formatter.result({
-  "duration": 186000,
+  "duration": 162000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "40.00",
+      "offset": 22
+    }
+  ],
+  "location": "CashWithdrawTest.my_balance_should_be_$(String)"
+});
+formatter.result({
+  "duration": 1203000,
   "status": "passed"
 });
 formatter.scenario({
@@ -411,13 +754,13 @@ formatter.scenario({
   "description": "",
   "name": "Withdraw cash successfully twice",
   "keyword": "Scenario Outline",
-  "line": 22,
+  "line": 23,
   "type": "scenario"
 });
 formatter.step({
-  "name": "that I have a starting balance of $50.00 in my account",
+  "name": "I have a starting balance of $50.00 in my account",
   "keyword": "Given ",
-  "line": 13,
+  "line": 14,
   "matchedColumns": [
     0
   ]
@@ -425,7 +768,7 @@ formatter.step({
 formatter.step({
   "name": "I withdraw $30",
   "keyword": "When ",
-  "line": 14,
+  "line": 15,
   "matchedColumns": [
     1
   ]
@@ -433,39 +776,38 @@ formatter.step({
 formatter.step({
   "name": "I withdraw $20",
   "keyword": "And ",
-  "line": 15,
+  "line": 16,
   "matchedColumns": [
     2
   ]
 });
 formatter.step({
-  "name": "I should have received $\u003ccash\u003e",
+  "name": "I should have received $50",
   "keyword": "Then ",
-  "line": 16
-});
-formatter.step({
-  "name": "my balance should be $0.00",
-  "keyword": "And ",
   "line": 17,
   "matchedColumns": [
     3
   ]
 });
+formatter.step({
+  "name": "my balance should be $0.00",
+  "keyword": "And ",
+  "line": 18,
+  "matchedColumns": [
+    4
+  ]
+});
 formatter.match({
   "arguments": [
     {
-      "val": "50",
-      "offset": 35
-    },
-    {
-      "val": "00",
-      "offset": 38
+      "val": "50.00",
+      "offset": 30
     }
   ],
-  "location": "WithdrawTest.that_I_have_a_starting_balance_of_$_in_my_account(int,int)"
+  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
 });
 formatter.result({
-  "duration": 164000,
+  "duration": 137000,
   "status": "passed"
 });
 formatter.match({
@@ -475,10 +817,10 @@ formatter.match({
       "offset": 12
     }
   ],
-  "location": "WithdrawTest.i_withdraw_$(int)"
+  "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 77000,
+  "duration": 133000,
   "status": "passed"
 });
 formatter.match({
@@ -488,34 +830,36 @@ formatter.match({
       "offset": 12
     }
   ],
-  "location": "WithdrawTest.i_withdraw_$(int)"
+  "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 74000,
-  "status": "passed"
-});
-formatter.match({
-  "location": "WithdrawTest.i_should_have_received_$_cash()"
-});
-formatter.result({
-  "duration": 15000,
+  "duration": 93000,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "0",
-      "offset": 22
-    },
-    {
-      "val": "00",
+      "val": "50",
       "offset": 24
     }
   ],
-  "location": "WithdrawTest.my_balance_should_be_$(int,int)"
+  "location": "CashWithdrawTest.i_should_have_received_$(int)"
 });
 formatter.result({
-  "duration": 150000,
+  "duration": 101000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "0.00",
+      "offset": 22
+    }
+  ],
+  "location": "CashWithdrawTest.my_balance_should_be_$(String)"
+});
+formatter.result({
+  "duration": 89000,
   "status": "passed"
 });
 formatter.scenario({
@@ -523,13 +867,13 @@ formatter.scenario({
   "description": "",
   "name": "Withdraw cash successfully twice",
   "keyword": "Scenario Outline",
-  "line": 23,
+  "line": 24,
   "type": "scenario"
 });
 formatter.step({
-  "name": "that I have a starting balance of $51.50 in my account",
+  "name": "I have a starting balance of $51.50 in my account",
   "keyword": "Given ",
-  "line": 13,
+  "line": 14,
   "matchedColumns": [
     0
   ]
@@ -537,7 +881,7 @@ formatter.step({
 formatter.step({
   "name": "I withdraw $30",
   "keyword": "When ",
-  "line": 14,
+  "line": 15,
   "matchedColumns": [
     1
   ]
@@ -545,39 +889,38 @@ formatter.step({
 formatter.step({
   "name": "I withdraw $20",
   "keyword": "And ",
-  "line": 15,
+  "line": 16,
   "matchedColumns": [
     2
   ]
 });
 formatter.step({
-  "name": "I should have received $\u003ccash\u003e",
+  "name": "I should have received $50",
   "keyword": "Then ",
-  "line": 16
-});
-formatter.step({
-  "name": "my balance should be $1.50",
-  "keyword": "And ",
   "line": 17,
   "matchedColumns": [
     3
   ]
 });
+formatter.step({
+  "name": "my balance should be $1.50",
+  "keyword": "And ",
+  "line": 18,
+  "matchedColumns": [
+    4
+  ]
+});
 formatter.match({
   "arguments": [
     {
-      "val": "51",
-      "offset": 35
-    },
-    {
-      "val": "50",
-      "offset": 38
+      "val": "51.50",
+      "offset": 30
     }
   ],
-  "location": "WithdrawTest.that_I_have_a_starting_balance_of_$_in_my_account(int,int)"
+  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
 });
 formatter.result({
-  "duration": 273000,
+  "duration": 132000,
   "status": "passed"
 });
 formatter.match({
@@ -587,10 +930,10 @@ formatter.match({
       "offset": 12
     }
   ],
-  "location": "WithdrawTest.i_withdraw_$(int)"
+  "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 308000,
+  "duration": 94000,
   "status": "passed"
 });
 formatter.match({
@@ -600,34 +943,36 @@ formatter.match({
       "offset": 12
     }
   ],
-  "location": "WithdrawTest.i_withdraw_$(int)"
+  "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 142000,
-  "status": "passed"
-});
-formatter.match({
-  "location": "WithdrawTest.i_should_have_received_$_cash()"
-});
-formatter.result({
-  "duration": 32000,
+  "duration": 117000,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "1",
-      "offset": 22
-    },
-    {
       "val": "50",
       "offset": 24
     }
   ],
-  "location": "WithdrawTest.my_balance_should_be_$(int,int)"
+  "location": "CashWithdrawTest.i_should_have_received_$(int)"
 });
 formatter.result({
-  "duration": 185000,
+  "duration": 132000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "1.50",
+      "offset": 22
+    }
+  ],
+  "location": "CashWithdrawTest.my_balance_should_be_$(String)"
+});
+formatter.result({
+  "duration": 115000,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -635,59 +980,59 @@ formatter.scenarioOutline({
   "description": "",
   "name": "Withdraw cash unsuccessfully three times in 24-hour period",
   "keyword": "Scenario Outline",
-  "line": 28,
+  "line": 29,
   "type": "scenario_outline",
   "comments": [
     {
       "value": "#",
-      "line": 25
-    },
-    {
-      "value": "# Add scenarios to take into account these rules:",
       "line": 26
     },
     {
-      "value": "# 1. You cannot make more than three withdrawals in a single 24-hour period.",
+      "value": "# Add scenarios to take into account these rules:",
       "line": 27
+    },
+    {
+      "value": "# 1. You cannot make more than three withdrawals in a single 24-hour period.",
+      "line": 28
     }
   ]
 });
 formatter.step({
-  "name": "that I have a starting balance of $\u003cstart_balance\u003e in my account",
+  "name": "I have a starting balance of $\u003cstart_balance\u003e in my account",
   "keyword": "Given ",
-  "line": 29
+  "line": 30
 });
 formatter.step({
   "name": "I withdraw $\u003camount1\u003e",
   "keyword": "When ",
-  "line": 30
+  "line": 31
 });
 formatter.step({
   "name": "I withdraw $\u003camount2\u003e",
   "keyword": "And ",
-  "line": 31
+  "line": 32
 });
 formatter.step({
   "name": "I withdraw $\u003camount3\u003e",
   "keyword": "And ",
-  "line": 32
+  "line": 33
 });
 formatter.step({
   "name": "I withdraw $\u003camount4\u003e",
   "keyword": "And ",
-  "line": 33
+  "line": 34
 });
 formatter.step({
-  "name": "There will be an withdraw exceed 24-hour exception",
+  "name": "a withdraw exceed 24-hour exception occurs",
   "keyword": "Then ",
-  "line": 34
+  "line": 35
 });
 formatter.examples({
   "id": "cash-withdrawal;withdraw-cash-unsuccessfully-three-times-in-24-hour-period;",
   "description": "",
   "name": "",
   "keyword": "Examples",
-  "line": 36,
+  "line": 37,
   "rows": [
     {
       "id": "cash-withdrawal;withdraw-cash-unsuccessfully-three-times-in-24-hour-period;;1",
@@ -698,7 +1043,7 @@ formatter.examples({
         "amount3",
         "amount4"
       ],
-      "line": 37
+      "line": 38
     },
     {
       "id": "cash-withdrawal;withdraw-cash-unsuccessfully-three-times-in-24-hour-period;;2",
@@ -709,7 +1054,7 @@ formatter.examples({
         "20",
         "10"
       ],
-      "line": 38
+      "line": 39
     },
     {
       "id": "cash-withdrawal;withdraw-cash-unsuccessfully-three-times-in-24-hour-period;;3",
@@ -720,7 +1065,7 @@ formatter.examples({
         "10",
         "10"
       ],
-      "line": 39
+      "line": 40
     },
     {
       "id": "cash-withdrawal;withdraw-cash-unsuccessfully-three-times-in-24-hour-period;;4",
@@ -731,7 +1076,7 @@ formatter.examples({
         "10",
         "10"
       ],
-      "line": 40
+      "line": 41
     }
   ]
 });
@@ -740,13 +1085,13 @@ formatter.scenario({
   "description": "",
   "name": "Withdraw cash unsuccessfully three times in 24-hour period",
   "keyword": "Scenario Outline",
-  "line": 38,
+  "line": 39,
   "type": "scenario"
 });
 formatter.step({
-  "name": "that I have a starting balance of $100.00 in my account",
+  "name": "I have a starting balance of $100.00 in my account",
   "keyword": "Given ",
-  "line": 29,
+  "line": 30,
   "matchedColumns": [
     0
   ]
@@ -754,7 +1099,7 @@ formatter.step({
 formatter.step({
   "name": "I withdraw $20",
   "keyword": "When ",
-  "line": 30,
+  "line": 31,
   "matchedColumns": [
     1
   ]
@@ -762,7 +1107,7 @@ formatter.step({
 formatter.step({
   "name": "I withdraw $40",
   "keyword": "And ",
-  "line": 31,
+  "line": 32,
   "matchedColumns": [
     2
   ]
@@ -770,7 +1115,7 @@ formatter.step({
 formatter.step({
   "name": "I withdraw $20",
   "keyword": "And ",
-  "line": 32,
+  "line": 33,
   "matchedColumns": [
     3
   ]
@@ -778,31 +1123,27 @@ formatter.step({
 formatter.step({
   "name": "I withdraw $10",
   "keyword": "And ",
-  "line": 33,
+  "line": 34,
   "matchedColumns": [
     4
   ]
 });
 formatter.step({
-  "name": "There will be an withdraw exceed 24-hour exception",
+  "name": "a withdraw exceed 24-hour exception occurs",
   "keyword": "Then ",
-  "line": 34
+  "line": 35
 });
 formatter.match({
   "arguments": [
     {
-      "val": "100",
-      "offset": 35
-    },
-    {
-      "val": "00",
-      "offset": 39
+      "val": "100.00",
+      "offset": 30
     }
   ],
-  "location": "WithdrawTest.that_I_have_a_starting_balance_of_$_in_my_account(int,int)"
+  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
 });
 formatter.result({
-  "duration": 263000,
+  "duration": 135000,
   "status": "passed"
 });
 formatter.match({
@@ -812,10 +1153,10 @@ formatter.match({
       "offset": 12
     }
   ],
-  "location": "WithdrawTest.i_withdraw_$(int)"
+  "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 135000,
+  "duration": 93000,
   "status": "passed"
 });
 formatter.match({
@@ -825,129 +1166,7 @@ formatter.match({
       "offset": 12
     }
   ],
-  "location": "WithdrawTest.i_withdraw_$(int)"
-});
-formatter.result({
-  "duration": 135000,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "20",
-      "offset": 12
-    }
-  ],
-  "location": "WithdrawTest.i_withdraw_$(int)"
-});
-formatter.result({
-  "duration": 124000,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "10",
-      "offset": 12
-    }
-  ],
-  "location": "WithdrawTest.i_withdraw_$(int)"
-});
-formatter.result({
-  "duration": 77000,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "24",
-      "offset": 33
-    }
-  ],
-  "location": "WithdrawTest.there_will_be_an_withdraw_exceed_hour_exception(int)"
-});
-formatter.result({
-  "duration": 118000,
-  "status": "passed"
-});
-formatter.scenario({
-  "id": "cash-withdrawal;withdraw-cash-unsuccessfully-three-times-in-24-hour-period;;3",
-  "description": "",
-  "name": "Withdraw cash unsuccessfully three times in 24-hour period",
-  "keyword": "Scenario Outline",
-  "line": 39,
-  "type": "scenario"
-});
-formatter.step({
-  "name": "that I have a starting balance of $50.00 in my account",
-  "keyword": "Given ",
-  "line": 29,
-  "matchedColumns": [
-    0
-  ]
-});
-formatter.step({
-  "name": "I withdraw $20",
-  "keyword": "When ",
-  "line": 30,
-  "matchedColumns": [
-    1
-  ]
-});
-formatter.step({
-  "name": "I withdraw $10",
-  "keyword": "And ",
-  "line": 31,
-  "matchedColumns": [
-    2
-  ]
-});
-formatter.step({
-  "name": "I withdraw $10",
-  "keyword": "And ",
-  "line": 32,
-  "matchedColumns": [
-    3
-  ]
-});
-formatter.step({
-  "name": "I withdraw $10",
-  "keyword": "And ",
-  "line": 33,
-  "matchedColumns": [
-    4
-  ]
-});
-formatter.step({
-  "name": "There will be an withdraw exceed 24-hour exception",
-  "keyword": "Then ",
-  "line": 34
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "50",
-      "offset": 35
-    },
-    {
-      "val": "00",
-      "offset": 38
-    }
-  ],
-  "location": "WithdrawTest.that_I_have_a_starting_balance_of_$_in_my_account(int,int)"
-});
-formatter.result({
-  "duration": 200000,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "20",
-      "offset": 12
-    }
-  ],
-  "location": "WithdrawTest.i_withdraw_$(int)"
+  "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
   "duration": 101000,
@@ -956,14 +1175,14 @@ formatter.result({
 formatter.match({
   "arguments": [
     {
-      "val": "10",
+      "val": "20",
       "offset": 12
     }
   ],
-  "location": "WithdrawTest.i_withdraw_$(int)"
+  "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 97000,
+  "duration": 80000,
   "status": "passed"
 });
 formatter.match({
@@ -973,40 +1192,21 @@ formatter.match({
       "offset": 12
     }
   ],
-  "location": "WithdrawTest.i_withdraw_$(int)"
+  "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 82000,
+  "duration": 209000,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "10",
-      "offset": 12
-    }
-  ],
-  "location": "WithdrawTest.i_withdraw_$(int)"
+  "location": "CashWithdrawTest.a_withdraw_exceed_24hour_exception_occurs()"
 });
 formatter.result({
-  "duration": 811000,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "24",
-      "offset": 33
-    }
-  ],
-  "location": "WithdrawTest.there_will_be_an_withdraw_exceed_hour_exception(int)"
-});
-formatter.result({
-  "duration": 95000,
+  "duration": 45000,
   "status": "passed"
 });
 formatter.scenario({
-  "id": "cash-withdrawal;withdraw-cash-unsuccessfully-three-times-in-24-hour-period;;4",
+  "id": "cash-withdrawal;withdraw-cash-unsuccessfully-three-times-in-24-hour-period;;3",
   "description": "",
   "name": "Withdraw cash unsuccessfully three times in 24-hour period",
   "keyword": "Scenario Outline",
@@ -1014,9 +1214,9 @@ formatter.scenario({
   "type": "scenario"
 });
 formatter.step({
-  "name": "that I have a starting balance of $51.50 in my account",
+  "name": "I have a starting balance of $50.00 in my account",
   "keyword": "Given ",
-  "line": 29,
+  "line": 30,
   "matchedColumns": [
     0
   ]
@@ -1024,7 +1224,7 @@ formatter.step({
 formatter.step({
   "name": "I withdraw $20",
   "keyword": "When ",
-  "line": 30,
+  "line": 31,
   "matchedColumns": [
     1
   ]
@@ -1032,7 +1232,7 @@ formatter.step({
 formatter.step({
   "name": "I withdraw $10",
   "keyword": "And ",
-  "line": 31,
+  "line": 32,
   "matchedColumns": [
     2
   ]
@@ -1040,7 +1240,7 @@ formatter.step({
 formatter.step({
   "name": "I withdraw $10",
   "keyword": "And ",
-  "line": 32,
+  "line": 33,
   "matchedColumns": [
     3
   ]
@@ -1048,31 +1248,27 @@ formatter.step({
 formatter.step({
   "name": "I withdraw $10",
   "keyword": "And ",
-  "line": 33,
+  "line": 34,
   "matchedColumns": [
     4
   ]
 });
 formatter.step({
-  "name": "There will be an withdraw exceed 24-hour exception",
+  "name": "a withdraw exceed 24-hour exception occurs",
   "keyword": "Then ",
-  "line": 34
+  "line": 35
 });
 formatter.match({
   "arguments": [
     {
-      "val": "51",
-      "offset": 35
-    },
-    {
-      "val": "50",
-      "offset": 38
+      "val": "50.00",
+      "offset": 30
     }
   ],
-  "location": "WithdrawTest.that_I_have_a_starting_balance_of_$_in_my_account(int,int)"
+  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
 });
 formatter.result({
-  "duration": 270000,
+  "duration": 131000,
   "status": "passed"
 });
 formatter.match({
@@ -1082,10 +1278,10 @@ formatter.match({
       "offset": 12
     }
   ],
-  "location": "WithdrawTest.i_withdraw_$(int)"
+  "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 154000,
+  "duration": 78000,
   "status": "passed"
 });
 formatter.match({
@@ -1095,10 +1291,10 @@ formatter.match({
       "offset": 12
     }
   ],
-  "location": "WithdrawTest.i_withdraw_$(int)"
+  "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 129000,
+  "duration": 325000,
   "status": "passed"
 });
 formatter.match({
@@ -1108,10 +1304,10 @@ formatter.match({
       "offset": 12
     }
   ],
-  "location": "WithdrawTest.i_withdraw_$(int)"
+  "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 130000,
+  "duration": 95000,
   "status": "passed"
 });
 formatter.match({
@@ -1121,23 +1317,142 @@ formatter.match({
       "offset": 12
     }
   ],
-  "location": "WithdrawTest.i_withdraw_$(int)"
+  "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 137000,
+  "duration": 865000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "CashWithdrawTest.a_withdraw_exceed_24hour_exception_occurs()"
+});
+formatter.result({
+  "duration": 42000,
+  "status": "passed"
+});
+formatter.scenario({
+  "id": "cash-withdrawal;withdraw-cash-unsuccessfully-three-times-in-24-hour-period;;4",
+  "description": "",
+  "name": "Withdraw cash unsuccessfully three times in 24-hour period",
+  "keyword": "Scenario Outline",
+  "line": 41,
+  "type": "scenario"
+});
+formatter.step({
+  "name": "I have a starting balance of $51.50 in my account",
+  "keyword": "Given ",
+  "line": 30,
+  "matchedColumns": [
+    0
+  ]
+});
+formatter.step({
+  "name": "I withdraw $20",
+  "keyword": "When ",
+  "line": 31,
+  "matchedColumns": [
+    1
+  ]
+});
+formatter.step({
+  "name": "I withdraw $10",
+  "keyword": "And ",
+  "line": 32,
+  "matchedColumns": [
+    2
+  ]
+});
+formatter.step({
+  "name": "I withdraw $10",
+  "keyword": "And ",
+  "line": 33,
+  "matchedColumns": [
+    3
+  ]
+});
+formatter.step({
+  "name": "I withdraw $10",
+  "keyword": "And ",
+  "line": 34,
+  "matchedColumns": [
+    4
+  ]
+});
+formatter.step({
+  "name": "a withdraw exceed 24-hour exception occurs",
+  "keyword": "Then ",
+  "line": 35
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "51.50",
+      "offset": 30
+    }
+  ],
+  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
+});
+formatter.result({
+  "duration": 214000,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "24",
-      "offset": 33
+      "val": "20",
+      "offset": 12
     }
   ],
-  "location": "WithdrawTest.there_will_be_an_withdraw_exceed_hour_exception(int)"
+  "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 100000,
+  "duration": 142000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "10",
+      "offset": 12
+    }
+  ],
+  "location": "CashWithdrawTest.i_withdraw_$(int)"
+});
+formatter.result({
+  "duration": 126000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "10",
+      "offset": 12
+    }
+  ],
+  "location": "CashWithdrawTest.i_withdraw_$(int)"
+});
+formatter.result({
+  "duration": 108000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "10",
+      "offset": 12
+    }
+  ],
+  "location": "CashWithdrawTest.i_withdraw_$(int)"
+});
+formatter.result({
+  "duration": 192000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "CashWithdrawTest.a_withdraw_exceed_24hour_exception_occurs()"
+});
+formatter.result({
+  "duration": 29000,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -1145,7 +1460,7 @@ formatter.scenarioOutline({
   "description": "",
   "name": "Withdraw cash failure for more than $500 in a single 24-hour period",
   "keyword": "Scenario Outline",
-  "line": 45,
+  "line": 44,
   "type": "scenario_outline",
   "comments": [
     {
@@ -1157,24 +1472,24 @@ formatter.scenarioOutline({
 formatter.step({
   "name": "I have a starting balance of $\u003cstart_balance\u003e in my account",
   "keyword": "Given ",
-  "line": 46
+  "line": 45
 });
 formatter.step({
   "name": "I withdraw $\u003camount\u003e",
   "keyword": "When ",
-  "line": 47
+  "line": 46
 });
 formatter.step({
-  "name": "there will be an withdraw exceed amount limit exception",
+  "name": "a withdraw exceed amount limit exception occurs",
   "keyword": "Then ",
-  "line": 48
+  "line": 47
 });
 formatter.examples({
   "id": "cash-withdrawal;withdraw-cash-failure-for-more-than-$500-in-a-single-24-hour-period;",
   "description": "",
   "name": "",
   "keyword": "Examples",
-  "line": 50,
+  "line": 49,
   "rows": [
     {
       "id": "cash-withdrawal;withdraw-cash-failure-for-more-than-$500-in-a-single-24-hour-period;;1",
@@ -1182,7 +1497,7 @@ formatter.examples({
         "start_balance",
         "amount"
       ],
-      "line": 51
+      "line": 50
     },
     {
       "id": "cash-withdrawal;withdraw-cash-failure-for-more-than-$500-in-a-single-24-hour-period;;2",
@@ -1190,7 +1505,7 @@ formatter.examples({
         "1000.00",
         "510"
       ],
-      "line": 52
+      "line": 51
     },
     {
       "id": "cash-withdrawal;withdraw-cash-failure-for-more-than-$500-in-a-single-24-hour-period;;3",
@@ -1198,7 +1513,7 @@ formatter.examples({
         "2000.00",
         "600"
       ],
-      "line": 53
+      "line": 52
     },
     {
       "id": "cash-withdrawal;withdraw-cash-failure-for-more-than-$500-in-a-single-24-hour-period;;4",
@@ -1206,7 +1521,7 @@ formatter.examples({
         "3000.00",
         "2000"
       ],
-      "line": 54
+      "line": 53
     }
   ]
 });
@@ -1215,13 +1530,13 @@ formatter.scenario({
   "description": "",
   "name": "Withdraw cash failure for more than $500 in a single 24-hour period",
   "keyword": "Scenario Outline",
-  "line": 52,
+  "line": 51,
   "type": "scenario"
 });
 formatter.step({
   "name": "I have a starting balance of $1000.00 in my account",
   "keyword": "Given ",
-  "line": 46,
+  "line": 45,
   "matchedColumns": [
     0
   ]
@@ -1229,31 +1544,27 @@ formatter.step({
 formatter.step({
   "name": "I withdraw $510",
   "keyword": "When ",
-  "line": 47,
+  "line": 46,
   "matchedColumns": [
     1
   ]
 });
 formatter.step({
-  "name": "there will be an withdraw exceed amount limit exception",
+  "name": "a withdraw exceed amount limit exception occurs",
   "keyword": "Then ",
-  "line": 48
+  "line": 47
 });
 formatter.match({
   "arguments": [
     {
-      "val": "1000",
+      "val": "1000.00",
       "offset": 30
-    },
-    {
-      "val": "00",
-      "offset": 35
     }
   ],
-  "location": "WithdrawTest.i_have_a_starting_balance_of_$_in_my_account(int,int)"
+  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
 });
 formatter.result({
-  "duration": 168000,
+  "duration": 126000,
   "status": "passed"
 });
 formatter.match({
@@ -1263,17 +1574,17 @@ formatter.match({
       "offset": 12
     }
   ],
-  "location": "WithdrawTest.i_withdraw_$(int)"
+  "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 75000,
+  "duration": 163000,
   "status": "passed"
 });
 formatter.match({
-  "location": "WithdrawTest.there_will_be_an_withdraw_exceed_amount_limit_exception()"
+  "location": "CashWithdrawTest.a_withdraw_exceed_amount_limit_exception_occurs()"
 });
 formatter.result({
-  "duration": 22000,
+  "duration": 29000,
   "status": "passed"
 });
 formatter.scenario({
@@ -1281,13 +1592,13 @@ formatter.scenario({
   "description": "",
   "name": "Withdraw cash failure for more than $500 in a single 24-hour period",
   "keyword": "Scenario Outline",
-  "line": 53,
+  "line": 52,
   "type": "scenario"
 });
 formatter.step({
   "name": "I have a starting balance of $2000.00 in my account",
   "keyword": "Given ",
-  "line": 46,
+  "line": 45,
   "matchedColumns": [
     0
   ]
@@ -1295,31 +1606,27 @@ formatter.step({
 formatter.step({
   "name": "I withdraw $600",
   "keyword": "When ",
-  "line": 47,
+  "line": 46,
   "matchedColumns": [
     1
   ]
 });
 formatter.step({
-  "name": "there will be an withdraw exceed amount limit exception",
+  "name": "a withdraw exceed amount limit exception occurs",
   "keyword": "Then ",
-  "line": 48
+  "line": 47
 });
 formatter.match({
   "arguments": [
     {
-      "val": "2000",
+      "val": "2000.00",
       "offset": 30
-    },
-    {
-      "val": "00",
-      "offset": 35
     }
   ],
-  "location": "WithdrawTest.i_have_a_starting_balance_of_$_in_my_account(int,int)"
+  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
 });
 formatter.result({
-  "duration": 152000,
+  "duration": 135000,
   "status": "passed"
 });
 formatter.match({
@@ -1329,17 +1636,17 @@ formatter.match({
       "offset": 12
     }
   ],
-  "location": "WithdrawTest.i_withdraw_$(int)"
+  "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 104000,
+  "duration": 137000,
   "status": "passed"
 });
 formatter.match({
-  "location": "WithdrawTest.there_will_be_an_withdraw_exceed_amount_limit_exception()"
+  "location": "CashWithdrawTest.a_withdraw_exceed_amount_limit_exception_occurs()"
 });
 formatter.result({
-  "duration": 22000,
+  "duration": 26000,
   "status": "passed"
 });
 formatter.scenario({
@@ -1347,13 +1654,13 @@ formatter.scenario({
   "description": "",
   "name": "Withdraw cash failure for more than $500 in a single 24-hour period",
   "keyword": "Scenario Outline",
-  "line": 54,
+  "line": 53,
   "type": "scenario"
 });
 formatter.step({
   "name": "I have a starting balance of $3000.00 in my account",
   "keyword": "Given ",
-  "line": 46,
+  "line": 45,
   "matchedColumns": [
     0
   ]
@@ -1361,31 +1668,27 @@ formatter.step({
 formatter.step({
   "name": "I withdraw $2000",
   "keyword": "When ",
-  "line": 47,
+  "line": 46,
   "matchedColumns": [
     1
   ]
 });
 formatter.step({
-  "name": "there will be an withdraw exceed amount limit exception",
+  "name": "a withdraw exceed amount limit exception occurs",
   "keyword": "Then ",
-  "line": 48
+  "line": 47
 });
 formatter.match({
   "arguments": [
     {
-      "val": "3000",
+      "val": "3000.00",
       "offset": 30
-    },
-    {
-      "val": "00",
-      "offset": 35
     }
   ],
-  "location": "WithdrawTest.i_have_a_starting_balance_of_$_in_my_account(int,int)"
+  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
 });
 formatter.result({
-  "duration": 170000,
+  "duration": 133000,
   "status": "passed"
 });
 formatter.match({
@@ -1395,17 +1698,17 @@ formatter.match({
       "offset": 12
     }
   ],
-  "location": "WithdrawTest.i_withdraw_$(int)"
+  "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 86000,
+  "duration": 122000,
   "status": "passed"
 });
 formatter.match({
-  "location": "WithdrawTest.there_will_be_an_withdraw_exceed_amount_limit_exception()"
+  "location": "CashWithdrawTest.a_withdraw_exceed_amount_limit_exception_occurs()"
 });
 formatter.result({
-  "duration": 40000,
+  "duration": 24000,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -1413,30 +1716,30 @@ formatter.scenarioOutline({
   "description": "",
   "name": "Withdraw cash Success for less than $500 in a single 24-hour period",
   "keyword": "Scenario Outline",
-  "line": 56,
+  "line": 55,
   "type": "scenario_outline"
 });
 formatter.step({
   "name": "I have a starting balance of $\u003cstart_balance\u003e in my account",
   "keyword": "Given ",
-  "line": 57
+  "line": 56
 });
 formatter.step({
   "name": "I withdraw $\u003camount\u003e",
   "keyword": "When ",
-  "line": 58
+  "line": 57
 });
 formatter.step({
   "name": "my balance should be $\u003cend_balance\u003e",
   "keyword": "Then ",
-  "line": 59
+  "line": 58
 });
 formatter.examples({
   "id": "cash-withdrawal;withdraw-cash-success-for-less-than-$500-in-a-single-24-hour-period;",
   "description": "",
   "name": "",
   "keyword": "Examples",
-  "line": 61,
+  "line": 60,
   "rows": [
     {
       "id": "cash-withdrawal;withdraw-cash-success-for-less-than-$500-in-a-single-24-hour-period;;1",
@@ -1445,7 +1748,7 @@ formatter.examples({
         "amount",
         "end_balance"
       ],
-      "line": 62
+      "line": 61
     },
     {
       "id": "cash-withdrawal;withdraw-cash-success-for-less-than-$500-in-a-single-24-hour-period;;2",
@@ -1454,7 +1757,7 @@ formatter.examples({
         "300",
         "200.00"
       ],
-      "line": 63
+      "line": 62
     },
     {
       "id": "cash-withdrawal;withdraw-cash-success-for-less-than-$500-in-a-single-24-hour-period;;3",
@@ -1463,7 +1766,7 @@ formatter.examples({
         "100",
         "900.00"
       ],
-      "line": 64
+      "line": 63
     },
     {
       "id": "cash-withdrawal;withdraw-cash-success-for-less-than-$500-in-a-single-24-hour-period;;4",
@@ -1472,7 +1775,7 @@ formatter.examples({
         "500",
         "2500.00"
       ],
-      "line": 65
+      "line": 64
     }
   ]
 });
@@ -1481,13 +1784,13 @@ formatter.scenario({
   "description": "",
   "name": "Withdraw cash Success for less than $500 in a single 24-hour period",
   "keyword": "Scenario Outline",
-  "line": 63,
+  "line": 62,
   "type": "scenario"
 });
 formatter.step({
   "name": "I have a starting balance of $500.00 in my account",
   "keyword": "Given ",
-  "line": 57,
+  "line": 56,
   "matchedColumns": [
     0
   ]
@@ -1495,7 +1798,7 @@ formatter.step({
 formatter.step({
   "name": "I withdraw $300",
   "keyword": "When ",
-  "line": 58,
+  "line": 57,
   "matchedColumns": [
     1
   ]
@@ -1503,7 +1806,7 @@ formatter.step({
 formatter.step({
   "name": "my balance should be $200.00",
   "keyword": "Then ",
-  "line": 59,
+  "line": 58,
   "matchedColumns": [
     2
   ]
@@ -1511,18 +1814,14 @@ formatter.step({
 formatter.match({
   "arguments": [
     {
-      "val": "500",
+      "val": "500.00",
       "offset": 30
-    },
-    {
-      "val": "00",
-      "offset": 34
     }
   ],
-  "location": "WithdrawTest.i_have_a_starting_balance_of_$_in_my_account(int,int)"
+  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
 });
 formatter.result({
-  "duration": 225000,
+  "duration": 131000,
   "status": "passed"
 });
 formatter.match({
@@ -1532,27 +1831,23 @@ formatter.match({
       "offset": 12
     }
   ],
-  "location": "WithdrawTest.i_withdraw_$(int)"
+  "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 79000,
+  "duration": 118000,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "200",
+      "val": "200.00",
       "offset": 22
-    },
-    {
-      "val": "00",
-      "offset": 26
     }
   ],
-  "location": "WithdrawTest.my_balance_should_be_$(int,int)"
+  "location": "CashWithdrawTest.my_balance_should_be_$(String)"
 });
 formatter.result({
-  "duration": 94000,
+  "duration": 102000,
   "status": "passed"
 });
 formatter.scenario({
@@ -1560,13 +1855,13 @@ formatter.scenario({
   "description": "",
   "name": "Withdraw cash Success for less than $500 in a single 24-hour period",
   "keyword": "Scenario Outline",
-  "line": 64,
+  "line": 63,
   "type": "scenario"
 });
 formatter.step({
   "name": "I have a starting balance of $1000.00 in my account",
   "keyword": "Given ",
-  "line": 57,
+  "line": 56,
   "matchedColumns": [
     0
   ]
@@ -1574,7 +1869,7 @@ formatter.step({
 formatter.step({
   "name": "I withdraw $100",
   "keyword": "When ",
-  "line": 58,
+  "line": 57,
   "matchedColumns": [
     1
   ]
@@ -1582,7 +1877,7 @@ formatter.step({
 formatter.step({
   "name": "my balance should be $900.00",
   "keyword": "Then ",
-  "line": 59,
+  "line": 58,
   "matchedColumns": [
     2
   ]
@@ -1590,18 +1885,14 @@ formatter.step({
 formatter.match({
   "arguments": [
     {
-      "val": "1000",
+      "val": "1000.00",
       "offset": 30
-    },
-    {
-      "val": "00",
-      "offset": 35
     }
   ],
-  "location": "WithdrawTest.i_have_a_starting_balance_of_$_in_my_account(int,int)"
+  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
 });
 formatter.result({
-  "duration": 178000,
+  "duration": 149000,
   "status": "passed"
 });
 formatter.match({
@@ -1611,27 +1902,23 @@ formatter.match({
       "offset": 12
     }
   ],
-  "location": "WithdrawTest.i_withdraw_$(int)"
+  "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 81000,
+  "duration": 116000,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "900",
+      "val": "900.00",
       "offset": 22
-    },
-    {
-      "val": "00",
-      "offset": 26
     }
   ],
-  "location": "WithdrawTest.my_balance_should_be_$(int,int)"
+  "location": "CashWithdrawTest.my_balance_should_be_$(String)"
 });
 formatter.result({
-  "duration": 104000,
+  "duration": 69000,
   "status": "passed"
 });
 formatter.scenario({
@@ -1639,13 +1926,13 @@ formatter.scenario({
   "description": "",
   "name": "Withdraw cash Success for less than $500 in a single 24-hour period",
   "keyword": "Scenario Outline",
-  "line": 65,
+  "line": 64,
   "type": "scenario"
 });
 formatter.step({
   "name": "I have a starting balance of $3000.00 in my account",
   "keyword": "Given ",
-  "line": 57,
+  "line": 56,
   "matchedColumns": [
     0
   ]
@@ -1653,7 +1940,7 @@ formatter.step({
 formatter.step({
   "name": "I withdraw $500",
   "keyword": "When ",
-  "line": 58,
+  "line": 57,
   "matchedColumns": [
     1
   ]
@@ -1661,7 +1948,7 @@ formatter.step({
 formatter.step({
   "name": "my balance should be $2500.00",
   "keyword": "Then ",
-  "line": 59,
+  "line": 58,
   "matchedColumns": [
     2
   ]
@@ -1669,18 +1956,14 @@ formatter.step({
 formatter.match({
   "arguments": [
     {
-      "val": "3000",
+      "val": "3000.00",
       "offset": 30
-    },
-    {
-      "val": "00",
-      "offset": 35
     }
   ],
-  "location": "WithdrawTest.i_have_a_starting_balance_of_$_in_my_account(int,int)"
+  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
 });
 formatter.result({
-  "duration": 200000,
+  "duration": 1227000,
   "status": "passed"
 });
 formatter.match({
@@ -1690,27 +1973,23 @@ formatter.match({
       "offset": 12
     }
   ],
-  "location": "WithdrawTest.i_withdraw_$(int)"
+  "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 98000,
+  "duration": 190000,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "2500",
+      "val": "2500.00",
       "offset": 22
-    },
-    {
-      "val": "00",
-      "offset": 27
     }
   ],
-  "location": "WithdrawTest.my_balance_should_be_$(int,int)"
+  "location": "CashWithdrawTest.my_balance_should_be_$(String)"
 });
 formatter.result({
-  "duration": 118000,
+  "duration": 103000,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -1718,36 +1997,36 @@ formatter.scenarioOutline({
   "description": "",
   "name": "Withdraw cash failure for more than account balance",
   "keyword": "Scenario Outline",
-  "line": 70,
+  "line": 67,
   "type": "scenario_outline",
   "comments": [
     {
       "value": "# 3. You cannot make a withdrawal for more than you have in the balance.",
-      "line": 68
+      "line": 66
     }
   ]
 });
 formatter.step({
   "name": "I have a starting balance of $\u003cstart_balance\u003e in my account",
   "keyword": "Given ",
-  "line": 71
+  "line": 68
 });
 formatter.step({
   "name": "I withdraw $\u003camount\u003e",
   "keyword": "When ",
-  "line": 72
+  "line": 69
 });
 formatter.step({
-  "name": "there will be an withdraw exceed balance limit exception",
+  "name": "a withdraw exceed balance limit exception occurs",
   "keyword": "Then ",
-  "line": 73
+  "line": 70
 });
 formatter.examples({
   "id": "cash-withdrawal;withdraw-cash-failure-for-more-than-account-balance;",
   "description": "",
   "name": "",
   "keyword": "Examples",
-  "line": 75,
+  "line": 72,
   "rows": [
     {
       "id": "cash-withdrawal;withdraw-cash-failure-for-more-than-account-balance;;1",
@@ -1755,7 +2034,7 @@ formatter.examples({
         "start_balance",
         "amount"
       ],
-      "line": 76
+      "line": 73
     },
     {
       "id": "cash-withdrawal;withdraw-cash-failure-for-more-than-account-balance;;2",
@@ -1763,7 +2042,7 @@ formatter.examples({
         "300.00",
         "310"
       ],
-      "line": 77
+      "line": 74
     },
     {
       "id": "cash-withdrawal;withdraw-cash-failure-for-more-than-account-balance;;3",
@@ -1771,7 +2050,7 @@ formatter.examples({
         "300.00",
         "400"
       ],
-      "line": 78
+      "line": 75
     },
     {
       "id": "cash-withdrawal;withdraw-cash-failure-for-more-than-account-balance;;4",
@@ -1779,7 +2058,7 @@ formatter.examples({
         "300.00",
         "500"
       ],
-      "line": 79
+      "line": 76
     }
   ]
 });
@@ -1788,13 +2067,13 @@ formatter.scenario({
   "description": "",
   "name": "Withdraw cash failure for more than account balance",
   "keyword": "Scenario Outline",
-  "line": 77,
+  "line": 74,
   "type": "scenario"
 });
 formatter.step({
   "name": "I have a starting balance of $300.00 in my account",
   "keyword": "Given ",
-  "line": 71,
+  "line": 68,
   "matchedColumns": [
     0
   ]
@@ -1802,31 +2081,27 @@ formatter.step({
 formatter.step({
   "name": "I withdraw $310",
   "keyword": "When ",
-  "line": 72,
+  "line": 69,
   "matchedColumns": [
     1
   ]
 });
 formatter.step({
-  "name": "there will be an withdraw exceed balance limit exception",
+  "name": "a withdraw exceed balance limit exception occurs",
   "keyword": "Then ",
-  "line": 73
+  "line": 70
 });
 formatter.match({
   "arguments": [
     {
-      "val": "300",
+      "val": "300.00",
       "offset": 30
-    },
-    {
-      "val": "00",
-      "offset": 34
     }
   ],
-  "location": "WithdrawTest.i_have_a_starting_balance_of_$_in_my_account(int,int)"
+  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
 });
 formatter.result({
-  "duration": 210000,
+  "duration": 184000,
   "status": "passed"
 });
 formatter.match({
@@ -1836,17 +2111,17 @@ formatter.match({
       "offset": 12
     }
   ],
-  "location": "WithdrawTest.i_withdraw_$(int)"
+  "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 97000,
+  "duration": 182000,
   "status": "passed"
 });
 formatter.match({
-  "location": "WithdrawTest.there_will_be_an_withdraw_exceed_balance_limit_exception()"
+  "location": "CashWithdrawTest.a_withdraw_exceed_balance_limit_exception_occurs()"
 });
 formatter.result({
-  "duration": 28000,
+  "duration": 31000,
   "status": "passed"
 });
 formatter.scenario({
@@ -1854,13 +2129,13 @@ formatter.scenario({
   "description": "",
   "name": "Withdraw cash failure for more than account balance",
   "keyword": "Scenario Outline",
-  "line": 78,
+  "line": 75,
   "type": "scenario"
 });
 formatter.step({
   "name": "I have a starting balance of $300.00 in my account",
   "keyword": "Given ",
-  "line": 71,
+  "line": 68,
   "matchedColumns": [
     0
   ]
@@ -1868,31 +2143,27 @@ formatter.step({
 formatter.step({
   "name": "I withdraw $400",
   "keyword": "When ",
-  "line": 72,
+  "line": 69,
   "matchedColumns": [
     1
   ]
 });
 formatter.step({
-  "name": "there will be an withdraw exceed balance limit exception",
+  "name": "a withdraw exceed balance limit exception occurs",
   "keyword": "Then ",
-  "line": 73
+  "line": 70
 });
 formatter.match({
   "arguments": [
     {
-      "val": "300",
+      "val": "300.00",
       "offset": 30
-    },
-    {
-      "val": "00",
-      "offset": 34
     }
   ],
-  "location": "WithdrawTest.i_have_a_starting_balance_of_$_in_my_account(int,int)"
+  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
 });
 formatter.result({
-  "duration": 622000,
+  "duration": 117000,
   "status": "passed"
 });
 formatter.match({
@@ -1902,17 +2173,17 @@ formatter.match({
       "offset": 12
     }
   ],
-  "location": "WithdrawTest.i_withdraw_$(int)"
+  "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 86000,
+  "duration": 112000,
   "status": "passed"
 });
 formatter.match({
-  "location": "WithdrawTest.there_will_be_an_withdraw_exceed_balance_limit_exception()"
+  "location": "CashWithdrawTest.a_withdraw_exceed_balance_limit_exception_occurs()"
 });
 formatter.result({
-  "duration": 20000,
+  "duration": 29000,
   "status": "passed"
 });
 formatter.scenario({
@@ -1920,13 +2191,13 @@ formatter.scenario({
   "description": "",
   "name": "Withdraw cash failure for more than account balance",
   "keyword": "Scenario Outline",
-  "line": 79,
+  "line": 76,
   "type": "scenario"
 });
 formatter.step({
   "name": "I have a starting balance of $300.00 in my account",
   "keyword": "Given ",
-  "line": 71,
+  "line": 68,
   "matchedColumns": [
     0
   ]
@@ -1934,31 +2205,27 @@ formatter.step({
 formatter.step({
   "name": "I withdraw $500",
   "keyword": "When ",
-  "line": 72,
+  "line": 69,
   "matchedColumns": [
     1
   ]
 });
 formatter.step({
-  "name": "there will be an withdraw exceed balance limit exception",
+  "name": "a withdraw exceed balance limit exception occurs",
   "keyword": "Then ",
-  "line": 73
+  "line": 70
 });
 formatter.match({
   "arguments": [
     {
-      "val": "300",
+      "val": "300.00",
       "offset": 30
-    },
-    {
-      "val": "00",
-      "offset": 34
     }
   ],
-  "location": "WithdrawTest.i_have_a_starting_balance_of_$_in_my_account(int,int)"
+  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
 });
 formatter.result({
-  "duration": 185000,
+  "duration": 95000,
   "status": "passed"
 });
 formatter.match({
@@ -1968,17 +2235,17 @@ formatter.match({
       "offset": 12
     }
   ],
-  "location": "WithdrawTest.i_withdraw_$(int)"
+  "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 80000,
+  "duration": 269000,
   "status": "passed"
 });
 formatter.match({
-  "location": "WithdrawTest.there_will_be_an_withdraw_exceed_balance_limit_exception()"
+  "location": "CashWithdrawTest.a_withdraw_exceed_balance_limit_exception_occurs()"
 });
 formatter.result({
-  "duration": 35000,
+  "duration": 34000,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -1986,30 +2253,30 @@ formatter.scenarioOutline({
   "description": "",
   "name": "Withdraw cash success for less than account balance",
   "keyword": "Scenario Outline",
-  "line": 81,
+  "line": 78,
   "type": "scenario_outline"
 });
 formatter.step({
   "name": "I have a starting balance of $\u003cstart_balance\u003e in my account",
   "keyword": "Given ",
-  "line": 82
+  "line": 79
 });
 formatter.step({
   "name": "I withdraw $\u003camount\u003e",
   "keyword": "When ",
-  "line": 83
+  "line": 80
 });
 formatter.step({
   "name": "my balance should be $\u003cend_balance\u003e",
   "keyword": "Then ",
-  "line": 84
+  "line": 81
 });
 formatter.examples({
   "id": "cash-withdrawal;withdraw-cash-success-for-less-than-account-balance;",
   "description": "",
   "name": "",
   "keyword": "Examples",
-  "line": 86,
+  "line": 83,
   "rows": [
     {
       "id": "cash-withdrawal;withdraw-cash-success-for-less-than-account-balance;;1",
@@ -2018,7 +2285,7 @@ formatter.examples({
         "amount",
         "end_balance"
       ],
-      "line": 87
+      "line": 84
     },
     {
       "id": "cash-withdrawal;withdraw-cash-success-for-less-than-account-balance;;2",
@@ -2027,7 +2294,7 @@ formatter.examples({
         "300",
         "0.00"
       ],
-      "line": 88
+      "line": 85
     },
     {
       "id": "cash-withdrawal;withdraw-cash-success-for-less-than-account-balance;;3",
@@ -2036,7 +2303,7 @@ formatter.examples({
         "250",
         "50.00"
       ],
-      "line": 89
+      "line": 86
     },
     {
       "id": "cash-withdrawal;withdraw-cash-success-for-less-than-account-balance;;4",
@@ -2045,7 +2312,7 @@ formatter.examples({
         "300",
         "100.00"
       ],
-      "line": 90
+      "line": 87
     }
   ]
 });
@@ -2054,13 +2321,13 @@ formatter.scenario({
   "description": "",
   "name": "Withdraw cash success for less than account balance",
   "keyword": "Scenario Outline",
-  "line": 88,
+  "line": 85,
   "type": "scenario"
 });
 formatter.step({
   "name": "I have a starting balance of $300.00 in my account",
   "keyword": "Given ",
-  "line": 82,
+  "line": 79,
   "matchedColumns": [
     0
   ]
@@ -2068,7 +2335,7 @@ formatter.step({
 formatter.step({
   "name": "I withdraw $300",
   "keyword": "When ",
-  "line": 83,
+  "line": 80,
   "matchedColumns": [
     1
   ]
@@ -2076,7 +2343,7 @@ formatter.step({
 formatter.step({
   "name": "my balance should be $0.00",
   "keyword": "Then ",
-  "line": 84,
+  "line": 81,
   "matchedColumns": [
     2
   ]
@@ -2084,18 +2351,14 @@ formatter.step({
 formatter.match({
   "arguments": [
     {
-      "val": "300",
+      "val": "300.00",
       "offset": 30
-    },
-    {
-      "val": "00",
-      "offset": 34
     }
   ],
-  "location": "WithdrawTest.i_have_a_starting_balance_of_$_in_my_account(int,int)"
+  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
 });
 formatter.result({
-  "duration": 242000,
+  "duration": 140000,
   "status": "passed"
 });
 formatter.match({
@@ -2105,27 +2368,23 @@ formatter.match({
       "offset": 12
     }
   ],
-  "location": "WithdrawTest.i_withdraw_$(int)"
+  "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 84000,
+  "duration": 87000,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "0",
+      "val": "0.00",
       "offset": 22
-    },
-    {
-      "val": "00",
-      "offset": 24
     }
   ],
-  "location": "WithdrawTest.my_balance_should_be_$(int,int)"
+  "location": "CashWithdrawTest.my_balance_should_be_$(String)"
 });
 formatter.result({
-  "duration": 111000,
+  "duration": 81000,
   "status": "passed"
 });
 formatter.scenario({
@@ -2133,13 +2392,13 @@ formatter.scenario({
   "description": "",
   "name": "Withdraw cash success for less than account balance",
   "keyword": "Scenario Outline",
-  "line": 89,
+  "line": 86,
   "type": "scenario"
 });
 formatter.step({
   "name": "I have a starting balance of $300.00 in my account",
   "keyword": "Given ",
-  "line": 82,
+  "line": 79,
   "matchedColumns": [
     0
   ]
@@ -2147,7 +2406,7 @@ formatter.step({
 formatter.step({
   "name": "I withdraw $250",
   "keyword": "When ",
-  "line": 83,
+  "line": 80,
   "matchedColumns": [
     1
   ]
@@ -2155,7 +2414,7 @@ formatter.step({
 formatter.step({
   "name": "my balance should be $50.00",
   "keyword": "Then ",
-  "line": 84,
+  "line": 81,
   "matchedColumns": [
     2
   ]
@@ -2163,18 +2422,14 @@ formatter.step({
 formatter.match({
   "arguments": [
     {
-      "val": "300",
+      "val": "300.00",
       "offset": 30
-    },
-    {
-      "val": "00",
-      "offset": 34
     }
   ],
-  "location": "WithdrawTest.i_have_a_starting_balance_of_$_in_my_account(int,int)"
+  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
 });
 formatter.result({
-  "duration": 152000,
+  "duration": 114000,
   "status": "passed"
 });
 formatter.match({
@@ -2184,27 +2439,23 @@ formatter.match({
       "offset": 12
     }
   ],
-  "location": "WithdrawTest.i_withdraw_$(int)"
+  "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 60000,
+  "duration": 98000,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "50",
+      "val": "50.00",
       "offset": 22
-    },
-    {
-      "val": "00",
-      "offset": 25
     }
   ],
-  "location": "WithdrawTest.my_balance_should_be_$(int,int)"
+  "location": "CashWithdrawTest.my_balance_should_be_$(String)"
 });
 formatter.result({
-  "duration": 108000,
+  "duration": 62000,
   "status": "passed"
 });
 formatter.scenario({
@@ -2212,13 +2463,13 @@ formatter.scenario({
   "description": "",
   "name": "Withdraw cash success for less than account balance",
   "keyword": "Scenario Outline",
-  "line": 90,
+  "line": 87,
   "type": "scenario"
 });
 formatter.step({
   "name": "I have a starting balance of $400.00 in my account",
   "keyword": "Given ",
-  "line": 82,
+  "line": 79,
   "matchedColumns": [
     0
   ]
@@ -2226,7 +2477,7 @@ formatter.step({
 formatter.step({
   "name": "I withdraw $300",
   "keyword": "When ",
-  "line": 83,
+  "line": 80,
   "matchedColumns": [
     1
   ]
@@ -2234,7 +2485,7 @@ formatter.step({
 formatter.step({
   "name": "my balance should be $100.00",
   "keyword": "Then ",
-  "line": 84,
+  "line": 81,
   "matchedColumns": [
     2
   ]
@@ -2242,18 +2493,14 @@ formatter.step({
 formatter.match({
   "arguments": [
     {
-      "val": "400",
+      "val": "400.00",
       "offset": 30
-    },
-    {
-      "val": "00",
-      "offset": 34
     }
   ],
-  "location": "WithdrawTest.i_have_a_starting_balance_of_$_in_my_account(int,int)"
+  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
 });
 formatter.result({
-  "duration": 158000,
+  "duration": 171000,
   "status": "passed"
 });
 formatter.match({
@@ -2263,27 +2510,23 @@ formatter.match({
       "offset": 12
     }
   ],
-  "location": "WithdrawTest.i_withdraw_$(int)"
+  "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 60000,
+  "duration": 84000,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "100",
+      "val": "100.00",
       "offset": 22
-    },
-    {
-      "val": "00",
-      "offset": 26
     }
   ],
-  "location": "WithdrawTest.my_balance_should_be_$(int,int)"
+  "location": "CashWithdrawTest.my_balance_should_be_$(String)"
 });
 formatter.result({
-  "duration": 102000,
+  "duration": 71000,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -2291,36 +2534,36 @@ formatter.scenarioOutline({
   "description": "",
   "name": "Withdraw cash failure for amount not being a multiple of $10",
   "keyword": "Scenario Outline",
-  "line": 95,
+  "line": 90,
   "type": "scenario_outline",
   "comments": [
     {
       "value": "# 4. If you try to withdraw an amount that is not a multiple of $10, it should be refused.",
-      "line": 93
+      "line": 89
     }
   ]
 });
 formatter.step({
   "name": "I have a starting balance of $\u003cstart_balance\u003e in my account",
   "keyword": "Given ",
-  "line": 96
+  "line": 91
 });
 formatter.step({
   "name": "I withdraw $\u003camount\u003e",
   "keyword": "When ",
-  "line": 97
+  "line": 92
 });
 formatter.step({
-  "name": "there will be an withdraw ammount exception",
+  "name": "a withdraw amount exception occurs",
   "keyword": "Then ",
-  "line": 98
+  "line": 93
 });
 formatter.examples({
   "id": "cash-withdrawal;withdraw-cash-failure-for-amount-not-being-a-multiple-of-$10;",
   "description": "",
   "name": "",
   "keyword": "Examples",
-  "line": 100,
+  "line": 95,
   "rows": [
     {
       "id": "cash-withdrawal;withdraw-cash-failure-for-amount-not-being-a-multiple-of-$10;;1",
@@ -2328,7 +2571,7 @@ formatter.examples({
         "start_balance",
         "amount"
       ],
-      "line": 101
+      "line": 96
     },
     {
       "id": "cash-withdrawal;withdraw-cash-failure-for-amount-not-being-a-multiple-of-$10;;2",
@@ -2336,7 +2579,7 @@ formatter.examples({
         "300.00",
         "1"
       ],
-      "line": 102
+      "line": 97
     },
     {
       "id": "cash-withdrawal;withdraw-cash-failure-for-amount-not-being-a-multiple-of-$10;;3",
@@ -2344,7 +2587,7 @@ formatter.examples({
         "300.00",
         "12"
       ],
-      "line": 103
+      "line": 98
     },
     {
       "id": "cash-withdrawal;withdraw-cash-failure-for-amount-not-being-a-multiple-of-$10;;4",
@@ -2352,7 +2595,7 @@ formatter.examples({
         "300.00",
         "231"
       ],
-      "line": 104
+      "line": 99
     }
   ]
 });
@@ -2361,13 +2604,13 @@ formatter.scenario({
   "description": "",
   "name": "Withdraw cash failure for amount not being a multiple of $10",
   "keyword": "Scenario Outline",
-  "line": 102,
+  "line": 97,
   "type": "scenario"
 });
 formatter.step({
   "name": "I have a starting balance of $300.00 in my account",
   "keyword": "Given ",
-  "line": 96,
+  "line": 91,
   "matchedColumns": [
     0
   ]
@@ -2375,31 +2618,27 @@ formatter.step({
 formatter.step({
   "name": "I withdraw $1",
   "keyword": "When ",
-  "line": 97,
+  "line": 92,
   "matchedColumns": [
     1
   ]
 });
 formatter.step({
-  "name": "there will be an withdraw ammount exception",
+  "name": "a withdraw amount exception occurs",
   "keyword": "Then ",
-  "line": 98
+  "line": 93
 });
 formatter.match({
   "arguments": [
     {
-      "val": "300",
+      "val": "300.00",
       "offset": 30
-    },
-    {
-      "val": "00",
-      "offset": 34
     }
   ],
-  "location": "WithdrawTest.i_have_a_starting_balance_of_$_in_my_account(int,int)"
+  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
 });
 formatter.result({
-  "duration": 774000,
+  "duration": 119000,
   "status": "passed"
 });
 formatter.match({
@@ -2409,17 +2648,17 @@ formatter.match({
       "offset": 12
     }
   ],
-  "location": "WithdrawTest.i_withdraw_$(int)"
+  "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 97000,
+  "duration": 175000,
   "status": "passed"
 });
 formatter.match({
-  "location": "WithdrawTest.there_will_be_an_withdraw_ammount_exception()"
+  "location": "CashWithdrawTest.a_withdraw_amount_exception_occurs()"
 });
 formatter.result({
-  "duration": 27000,
+  "duration": 33000,
   "status": "passed"
 });
 formatter.scenario({
@@ -2427,13 +2666,13 @@ formatter.scenario({
   "description": "",
   "name": "Withdraw cash failure for amount not being a multiple of $10",
   "keyword": "Scenario Outline",
-  "line": 103,
+  "line": 98,
   "type": "scenario"
 });
 formatter.step({
   "name": "I have a starting balance of $300.00 in my account",
   "keyword": "Given ",
-  "line": 96,
+  "line": 91,
   "matchedColumns": [
     0
   ]
@@ -2441,31 +2680,27 @@ formatter.step({
 formatter.step({
   "name": "I withdraw $12",
   "keyword": "When ",
-  "line": 97,
+  "line": 92,
   "matchedColumns": [
     1
   ]
 });
 formatter.step({
-  "name": "there will be an withdraw ammount exception",
+  "name": "a withdraw amount exception occurs",
   "keyword": "Then ",
-  "line": 98
+  "line": 93
 });
 formatter.match({
   "arguments": [
     {
-      "val": "300",
+      "val": "300.00",
       "offset": 30
-    },
-    {
-      "val": "00",
-      "offset": 34
     }
   ],
-  "location": "WithdrawTest.i_have_a_starting_balance_of_$_in_my_account(int,int)"
+  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
 });
 formatter.result({
-  "duration": 520000,
+  "duration": 155000,
   "status": "passed"
 });
 formatter.match({
@@ -2475,17 +2710,17 @@ formatter.match({
       "offset": 12
     }
   ],
-  "location": "WithdrawTest.i_withdraw_$(int)"
+  "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 103000,
+  "duration": 129000,
   "status": "passed"
 });
 formatter.match({
-  "location": "WithdrawTest.there_will_be_an_withdraw_ammount_exception()"
+  "location": "CashWithdrawTest.a_withdraw_amount_exception_occurs()"
 });
 formatter.result({
-  "duration": 26000,
+  "duration": 28000,
   "status": "passed"
 });
 formatter.scenario({
@@ -2493,13 +2728,13 @@ formatter.scenario({
   "description": "",
   "name": "Withdraw cash failure for amount not being a multiple of $10",
   "keyword": "Scenario Outline",
-  "line": 104,
+  "line": 99,
   "type": "scenario"
 });
 formatter.step({
   "name": "I have a starting balance of $300.00 in my account",
   "keyword": "Given ",
-  "line": 96,
+  "line": 91,
   "matchedColumns": [
     0
   ]
@@ -2507,31 +2742,27 @@ formatter.step({
 formatter.step({
   "name": "I withdraw $231",
   "keyword": "When ",
-  "line": 97,
+  "line": 92,
   "matchedColumns": [
     1
   ]
 });
 formatter.step({
-  "name": "there will be an withdraw ammount exception",
+  "name": "a withdraw amount exception occurs",
   "keyword": "Then ",
-  "line": 98
+  "line": 93
 });
 formatter.match({
   "arguments": [
     {
-      "val": "300",
+      "val": "300.00",
       "offset": 30
-    },
-    {
-      "val": "00",
-      "offset": 34
     }
   ],
-  "location": "WithdrawTest.i_have_a_starting_balance_of_$_in_my_account(int,int)"
+  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
 });
 formatter.result({
-  "duration": 171000,
+  "duration": 124000,
   "status": "passed"
 });
 formatter.match({
@@ -2541,17 +2772,17 @@ formatter.match({
       "offset": 12
     }
   ],
-  "location": "WithdrawTest.i_withdraw_$(int)"
+  "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 63000,
+  "duration": 154000,
   "status": "passed"
 });
 formatter.match({
-  "location": "WithdrawTest.there_will_be_an_withdraw_ammount_exception()"
+  "location": "CashWithdrawTest.a_withdraw_amount_exception_occurs()"
 });
 formatter.result({
-  "duration": 20000,
+  "duration": 25000,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -2559,30 +2790,30 @@ formatter.scenarioOutline({
   "description": "",
   "name": "Withdraw cash success for amount being a multiple of $10",
   "keyword": "Scenario Outline",
-  "line": 107,
+  "line": 101,
   "type": "scenario_outline"
 });
 formatter.step({
   "name": "I have a starting balance of $\u003cstart_balance\u003e in my account",
   "keyword": "Given ",
-  "line": 108
+  "line": 102
 });
 formatter.step({
   "name": "I withdraw $\u003camount\u003e",
   "keyword": "When ",
-  "line": 109
+  "line": 103
 });
 formatter.step({
   "name": "my balance should be $\u003cend_balance\u003e",
   "keyword": "Then ",
-  "line": 110
+  "line": 104
 });
 formatter.examples({
   "id": "cash-withdrawal;withdraw-cash-success-for-amount-being-a-multiple-of-$10;",
   "description": "",
   "name": "",
   "keyword": "Examples",
-  "line": 112,
+  "line": 106,
   "rows": [
     {
       "id": "cash-withdrawal;withdraw-cash-success-for-amount-being-a-multiple-of-$10;;1",
@@ -2591,7 +2822,7 @@ formatter.examples({
         "amount",
         "end_balance"
       ],
-      "line": 113
+      "line": 107
     },
     {
       "id": "cash-withdrawal;withdraw-cash-success-for-amount-being-a-multiple-of-$10;;2",
@@ -2600,7 +2831,7 @@ formatter.examples({
         "300",
         "0.00"
       ],
-      "line": 114
+      "line": 108
     },
     {
       "id": "cash-withdrawal;withdraw-cash-success-for-amount-being-a-multiple-of-$10;;3",
@@ -2609,7 +2840,7 @@ formatter.examples({
         "240",
         "60.00"
       ],
-      "line": 115
+      "line": 109
     },
     {
       "id": "cash-withdrawal;withdraw-cash-success-for-amount-being-a-multiple-of-$10;;4",
@@ -2618,7 +2849,7 @@ formatter.examples({
         "300",
         "100.00"
       ],
-      "line": 116
+      "line": 110
     }
   ]
 });
@@ -2627,13 +2858,13 @@ formatter.scenario({
   "description": "",
   "name": "Withdraw cash success for amount being a multiple of $10",
   "keyword": "Scenario Outline",
-  "line": 114,
+  "line": 108,
   "type": "scenario"
 });
 formatter.step({
   "name": "I have a starting balance of $300.00 in my account",
   "keyword": "Given ",
-  "line": 108,
+  "line": 102,
   "matchedColumns": [
     0
   ]
@@ -2641,7 +2872,7 @@ formatter.step({
 formatter.step({
   "name": "I withdraw $300",
   "keyword": "When ",
-  "line": 109,
+  "line": 103,
   "matchedColumns": [
     1
   ]
@@ -2649,7 +2880,7 @@ formatter.step({
 formatter.step({
   "name": "my balance should be $0.00",
   "keyword": "Then ",
-  "line": 110,
+  "line": 104,
   "matchedColumns": [
     2
   ]
@@ -2657,18 +2888,14 @@ formatter.step({
 formatter.match({
   "arguments": [
     {
-      "val": "300",
+      "val": "300.00",
       "offset": 30
-    },
-    {
-      "val": "00",
-      "offset": 34
     }
   ],
-  "location": "WithdrawTest.i_have_a_starting_balance_of_$_in_my_account(int,int)"
+  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
 });
 formatter.result({
-  "duration": 172000,
+  "duration": 188000,
   "status": "passed"
 });
 formatter.match({
@@ -2678,27 +2905,23 @@ formatter.match({
       "offset": 12
     }
   ],
-  "location": "WithdrawTest.i_withdraw_$(int)"
+  "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 70000,
+  "duration": 103000,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "0",
+      "val": "0.00",
       "offset": 22
-    },
-    {
-      "val": "00",
-      "offset": 24
     }
   ],
-  "location": "WithdrawTest.my_balance_should_be_$(int,int)"
+  "location": "CashWithdrawTest.my_balance_should_be_$(String)"
 });
 formatter.result({
-  "duration": 91000,
+  "duration": 82000,
   "status": "passed"
 });
 formatter.scenario({
@@ -2706,13 +2929,13 @@ formatter.scenario({
   "description": "",
   "name": "Withdraw cash success for amount being a multiple of $10",
   "keyword": "Scenario Outline",
-  "line": 115,
+  "line": 109,
   "type": "scenario"
 });
 formatter.step({
   "name": "I have a starting balance of $300.00 in my account",
   "keyword": "Given ",
-  "line": 108,
+  "line": 102,
   "matchedColumns": [
     0
   ]
@@ -2720,7 +2943,7 @@ formatter.step({
 formatter.step({
   "name": "I withdraw $240",
   "keyword": "When ",
-  "line": 109,
+  "line": 103,
   "matchedColumns": [
     1
   ]
@@ -2728,7 +2951,7 @@ formatter.step({
 formatter.step({
   "name": "my balance should be $60.00",
   "keyword": "Then ",
-  "line": 110,
+  "line": 104,
   "matchedColumns": [
     2
   ]
@@ -2736,18 +2959,14 @@ formatter.step({
 formatter.match({
   "arguments": [
     {
-      "val": "300",
+      "val": "300.00",
       "offset": 30
-    },
-    {
-      "val": "00",
-      "offset": 34
     }
   ],
-  "location": "WithdrawTest.i_have_a_starting_balance_of_$_in_my_account(int,int)"
+  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
 });
 formatter.result({
-  "duration": 168000,
+  "duration": 114000,
   "status": "passed"
 });
 formatter.match({
@@ -2757,27 +2976,23 @@ formatter.match({
       "offset": 12
     }
   ],
-  "location": "WithdrawTest.i_withdraw_$(int)"
+  "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 68000,
+  "duration": 121000,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "60",
+      "val": "60.00",
       "offset": 22
-    },
-    {
-      "val": "00",
-      "offset": 25
     }
   ],
-  "location": "WithdrawTest.my_balance_should_be_$(int,int)"
+  "location": "CashWithdrawTest.my_balance_should_be_$(String)"
 });
 formatter.result({
-  "duration": 87000,
+  "duration": 113000,
   "status": "passed"
 });
 formatter.scenario({
@@ -2785,13 +3000,13 @@ formatter.scenario({
   "description": "",
   "name": "Withdraw cash success for amount being a multiple of $10",
   "keyword": "Scenario Outline",
-  "line": 116,
+  "line": 110,
   "type": "scenario"
 });
 formatter.step({
   "name": "I have a starting balance of $400.00 in my account",
   "keyword": "Given ",
-  "line": 108,
+  "line": 102,
   "matchedColumns": [
     0
   ]
@@ -2799,7 +3014,7 @@ formatter.step({
 formatter.step({
   "name": "I withdraw $300",
   "keyword": "When ",
-  "line": 109,
+  "line": 103,
   "matchedColumns": [
     1
   ]
@@ -2807,7 +3022,7 @@ formatter.step({
 formatter.step({
   "name": "my balance should be $100.00",
   "keyword": "Then ",
-  "line": 110,
+  "line": 104,
   "matchedColumns": [
     2
   ]
@@ -2815,18 +3030,14 @@ formatter.step({
 formatter.match({
   "arguments": [
     {
-      "val": "400",
+      "val": "400.00",
       "offset": 30
-    },
-    {
-      "val": "00",
-      "offset": 34
     }
   ],
-  "location": "WithdrawTest.i_have_a_starting_balance_of_$_in_my_account(int,int)"
+  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
 });
 formatter.result({
-  "duration": 134000,
+  "duration": 176000,
   "status": "passed"
 });
 formatter.match({
@@ -2836,27 +3047,23 @@ formatter.match({
       "offset": 12
     }
   ],
-  "location": "WithdrawTest.i_withdraw_$(int)"
+  "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 61000,
+  "duration": 121000,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "100",
+      "val": "100.00",
       "offset": 22
-    },
-    {
-      "val": "00",
-      "offset": 26
     }
   ],
-  "location": "WithdrawTest.my_balance_should_be_$(int,int)"
+  "location": "CashWithdrawTest.my_balance_should_be_$(String)"
 });
 formatter.result({
-  "duration": 89000,
+  "duration": 101000,
   "status": "passed"
 });
 });
