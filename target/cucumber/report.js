@@ -48,22 +48,35 @@ formatter.examples({
     {
       "id": "cash-deposit;successful-deposit-once-from-an-account;;2",
       "cells": [
-        "100.00",
-        "20.1",
-        "120.1"
+        "50.00",
+        "50.89",
+        "100.89"
       ],
       "line": 10
     },
     {
       "id": "cash-deposit;successful-deposit-once-from-an-account;;3",
       "cells": [
-        "50.00",
-        "50.89",
-        "100.89"
+        "100.00",
+        "20.1",
+        "120.1"
       ],
       "line": 11
+    },
+    {
+      "id": "cash-deposit;successful-deposit-once-from-an-account;;4",
+      "cells": [
+        "100.00",
+        "0.1",
+        "100.1"
+      ],
+      "line": 12
     }
   ]
+});
+formatter.before({
+  "duration": 537000,
+  "status": "passed"
 });
 formatter.scenario({
   "id": "cash-deposit;successful-deposit-once-from-an-account;;2",
@@ -71,67 +84,6 @@ formatter.scenario({
   "name": "Successful deposit once from an account",
   "keyword": "Scenario Outline",
   "line": 10,
-  "type": "scenario"
-});
-formatter.step({
-  "name": "I have a starting balance of $100.00 in my account",
-  "keyword": "Given ",
-  "line": 4,
-  "matchedColumns": [
-    0
-  ]
-});
-formatter.step({
-  "name": "I deposit $20.1",
-  "keyword": "When ",
-  "line": 5,
-  "matchedColumns": [
-    1
-  ]
-});
-formatter.step({
-  "name": "my balance should be $120.1",
-  "keyword": "Then ",
-  "line": 6,
-  "matchedColumns": [
-    2
-  ]
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "100.00",
-      "offset": 30
-    }
-  ],
-  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
-});
-formatter.result({
-  "duration": 148479000,
-  "status": "passed"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "120.1",
-      "offset": 22
-    }
-  ],
-  "location": "CashWithdrawTest.my_balance_should_be_$(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "id": "cash-deposit;successful-deposit-once-from-an-account;;3",
-  "description": "",
-  "name": "Successful deposit once from an account",
-  "keyword": "Scenario Outline",
-  "line": 11,
   "type": "scenario"
 });
 formatter.step({
@@ -165,15 +117,24 @@ formatter.match({
       "offset": 30
     }
   ],
-  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
+  "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 184000,
+  "duration": 141960000,
   "status": "passed"
 });
-formatter.match({});
+formatter.match({
+  "arguments": [
+    {
+      "val": "50.89",
+      "offset": 11
+    }
+  ],
+  "location": "CashDepositTest.i_deposit_$(String)"
+});
 formatter.result({
-  "status": "undefined"
+  "duration": 171000,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -182,21 +143,184 @@ formatter.match({
       "offset": 22
     }
   ],
-  "location": "CashWithdrawTest.my_balance_should_be_$(String)"
+  "location": "CommonTest.my_balance_should_be_$(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1898000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 25000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 113000,
+  "status": "passed"
+});
+formatter.scenario({
+  "id": "cash-deposit;successful-deposit-once-from-an-account;;3",
+  "description": "",
+  "name": "Successful deposit once from an account",
+  "keyword": "Scenario Outline",
+  "line": 11,
+  "type": "scenario"
+});
+formatter.step({
+  "name": "I have a starting balance of $100.00 in my account",
+  "keyword": "Given ",
+  "line": 4,
+  "matchedColumns": [
+    0
+  ]
+});
+formatter.step({
+  "name": "I deposit $20.1",
+  "keyword": "When ",
+  "line": 5,
+  "matchedColumns": [
+    1
+  ]
+});
+formatter.step({
+  "name": "my balance should be $120.1",
+  "keyword": "Then ",
+  "line": 6,
+  "matchedColumns": [
+    2
+  ]
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "100.00",
+      "offset": 30
+    }
+  ],
+  "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
+});
+formatter.result({
+  "duration": 128000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "20.1",
+      "offset": 11
+    }
+  ],
+  "location": "CashDepositTest.i_deposit_$(String)"
+});
+formatter.result({
+  "duration": 177000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "120.1",
+      "offset": 22
+    }
+  ],
+  "location": "CommonTest.my_balance_should_be_$(String)"
+});
+formatter.result({
+  "duration": 88000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 18000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 70000,
+  "status": "passed"
+});
+formatter.scenario({
+  "id": "cash-deposit;successful-deposit-once-from-an-account;;4",
+  "description": "",
+  "name": "Successful deposit once from an account",
+  "keyword": "Scenario Outline",
+  "line": 12,
+  "type": "scenario"
+});
+formatter.step({
+  "name": "I have a starting balance of $100.00 in my account",
+  "keyword": "Given ",
+  "line": 4,
+  "matchedColumns": [
+    0
+  ]
+});
+formatter.step({
+  "name": "I deposit $0.1",
+  "keyword": "When ",
+  "line": 5,
+  "matchedColumns": [
+    1
+  ]
+});
+formatter.step({
+  "name": "my balance should be $100.1",
+  "keyword": "Then ",
+  "line": 6,
+  "matchedColumns": [
+    2
+  ]
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "100.00",
+      "offset": 30
+    }
+  ],
+  "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
+});
+formatter.result({
+  "duration": 85000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "0.1",
+      "offset": 11
+    }
+  ],
+  "location": "CashDepositTest.i_deposit_$(String)"
+});
+formatter.result({
+  "duration": 126000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "100.1",
+      "offset": 22
+    }
+  ],
+  "location": "CommonTest.my_balance_should_be_$(String)"
+});
+formatter.result({
+  "duration": 86000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 18000,
+  "status": "passed"
 });
 formatter.scenarioOutline({
-  "id": "cash-deposit;failed-deposit-from-an-account",
+  "id": "cash-deposit;deposit-failure-for-wrong-amount",
   "description": "",
-  "name": "Failed deposit from an account",
+  "name": "Deposit failure for wrong amount",
   "keyword": "Scenario Outline",
   "line": 14,
   "type": "scenario_outline"
 });
 formatter.step({
-  "name": "I have a starting balance of $100 in my account",
+  "name": "I have a starting balance of $\u003cstart_balance\u003e in my account",
   "keyword": "Given ",
   "line": 15
 });
@@ -206,61 +330,73 @@ formatter.step({
   "line": 16
 });
 formatter.step({
-  "name": "my balance should be $\u003cend_balance\u003e",
+  "name": "a deposit amount exception occurs",
   "keyword": "Then ",
   "line": 17
 });
 formatter.examples({
-  "id": "cash-deposit;failed-deposit-from-an-account;",
+  "id": "cash-deposit;deposit-failure-for-wrong-amount;",
   "description": "",
   "name": "",
   "keyword": "Examples",
   "line": 19,
   "rows": [
     {
-      "id": "cash-deposit;failed-deposit-from-an-account;;1",
+      "id": "cash-deposit;deposit-failure-for-wrong-amount;;1",
       "cells": [
         "start_balance",
-        "amount",
-        "end_balance"
+        "amount"
       ],
       "line": 20
     },
     {
-      "id": "cash-deposit;failed-deposit-from-an-account;;2",
+      "id": "cash-deposit;deposit-failure-for-wrong-amount;;2",
       "cells": [
         "100.00",
-        "20.1",
-        "120.1"
+        "-1.0"
       ],
       "line": 21
     },
     {
-      "id": "cash-deposit;failed-deposit-from-an-account;;3",
+      "id": "cash-deposit;deposit-failure-for-wrong-amount;;3",
       "cells": [
         "50.00",
-        "50.89",
-        "100.89"
+        "-560.00"
       ],
       "line": 22
+    },
+    {
+      "id": "cash-deposit;deposit-failure-for-wrong-amount;;4",
+      "cells": [
+        "50.00",
+        "-0.5"
+      ],
+      "line": 23
     }
   ]
 });
+formatter.before({
+  "duration": 66000,
+  "status": "passed"
+});
 formatter.scenario({
-  "id": "cash-deposit;failed-deposit-from-an-account;;2",
+  "id": "cash-deposit;deposit-failure-for-wrong-amount;;2",
   "description": "",
-  "name": "Failed deposit from an account",
+  "name": "Deposit failure for wrong amount",
   "keyword": "Scenario Outline",
   "line": 21,
   "type": "scenario"
 });
 formatter.step({
-  "name": "I have a starting balance of $100 in my account",
+  "name": "I have a starting balance of $100.00 in my account",
   "keyword": "Given ",
-  "line": 15
+  "line": 15,
+  "matchedColumns": [
+    0
+  ]
 });
 formatter.step({
-  "name": "I deposit $20.1",
+  "name": "I deposit $-1.0",
   "keyword": "When ",
   "line": 16,
   "matchedColumns": [
@@ -268,48 +404,69 @@ formatter.step({
   ]
 });
 formatter.step({
-  "name": "my balance should be $120.1",
+  "name": "a deposit amount exception occurs",
   "keyword": "Then ",
-  "line": 17,
-  "matchedColumns": [
-    2
-  ]
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+  "line": 17
 });
 formatter.match({
   "arguments": [
     {
-      "val": "120.1",
-      "offset": 22
+      "val": "100.00",
+      "offset": 30
     }
   ],
-  "location": "CashWithdrawTest.my_balance_should_be_$(String)"
+  "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 76000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "-1.0",
+      "offset": 11
+    }
+  ],
+  "location": "CashDepositTest.i_deposit_$(String)"
+});
+formatter.result({
+  "duration": 416000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "CashDepositTest.a_deposit_amount_exception_occurs()"
+});
+formatter.result({
+  "duration": 39000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 27000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 111000,
+  "status": "passed"
 });
 formatter.scenario({
-  "id": "cash-deposit;failed-deposit-from-an-account;;3",
+  "id": "cash-deposit;deposit-failure-for-wrong-amount;;3",
   "description": "",
-  "name": "Failed deposit from an account",
+  "name": "Deposit failure for wrong amount",
   "keyword": "Scenario Outline",
   "line": 22,
   "type": "scenario"
 });
 formatter.step({
-  "name": "I have a starting balance of $100 in my account",
+  "name": "I have a starting balance of $50.00 in my account",
   "keyword": "Given ",
-  "line": 15
+  "line": 15,
+  "matchedColumns": [
+    0
+  ]
 });
 formatter.step({
-  "name": "I deposit $50.89",
+  "name": "I deposit $-560.00",
   "keyword": "When ",
   "line": 16,
   "matchedColumns": [
@@ -317,32 +474,116 @@ formatter.step({
   ]
 });
 formatter.step({
-  "name": "my balance should be $100.89",
+  "name": "a deposit amount exception occurs",
   "keyword": "Then ",
-  "line": 17,
-  "matchedColumns": [
-    2
-  ]
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+  "line": 17
 });
 formatter.match({
   "arguments": [
     {
-      "val": "100.89",
-      "offset": 22
+      "val": "50.00",
+      "offset": 30
     }
   ],
-  "location": "CashWithdrawTest.my_balance_should_be_$(String)"
+  "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 108000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "-560.00",
+      "offset": 11
+    }
+  ],
+  "location": "CashDepositTest.i_deposit_$(String)"
+});
+formatter.result({
+  "duration": 214000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "CashDepositTest.a_deposit_amount_exception_occurs()"
+});
+formatter.result({
+  "duration": 29000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 18000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 131000,
+  "status": "passed"
+});
+formatter.scenario({
+  "id": "cash-deposit;deposit-failure-for-wrong-amount;;4",
+  "description": "",
+  "name": "Deposit failure for wrong amount",
+  "keyword": "Scenario Outline",
+  "line": 23,
+  "type": "scenario"
+});
+formatter.step({
+  "name": "I have a starting balance of $50.00 in my account",
+  "keyword": "Given ",
+  "line": 15,
+  "matchedColumns": [
+    0
+  ]
+});
+formatter.step({
+  "name": "I deposit $-0.5",
+  "keyword": "When ",
+  "line": 16,
+  "matchedColumns": [
+    1
+  ]
+});
+formatter.step({
+  "name": "a deposit amount exception occurs",
+  "keyword": "Then ",
+  "line": 17
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "50.00",
+      "offset": 30
+    }
+  ],
+  "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
+});
+formatter.result({
+  "duration": 113000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "-0.5",
+      "offset": 11
+    }
+  ],
+  "location": "CashDepositTest.i_deposit_$(String)"
+});
+formatter.result({
+  "duration": 200000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "CashDepositTest.a_deposit_amount_exception_occurs()"
+});
+formatter.result({
+  "duration": 30000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 19000,
+  "status": "passed"
 });
 formatter.uri("cash_withdrawal.feature");
 formatter.feature({
@@ -408,6 +649,10 @@ formatter.examples({
     }
   ]
 });
+formatter.before({
+  "duration": 82000,
+  "status": "passed"
+});
 formatter.scenario({
   "id": "cash-withdrawal;successful-withdrawal-from-an-account;;2",
   "description": "",
@@ -447,10 +692,10 @@ formatter.match({
       "offset": 30
     }
   ],
-  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
+  "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 147000,
+  "duration": 79000,
   "status": "passed"
 });
 formatter.match({
@@ -463,7 +708,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 403000,
+  "duration": 734000,
   "status": "passed"
 });
 formatter.match({
@@ -476,7 +721,15 @@ formatter.match({
   "location": "CashWithdrawTest.$_should_be_dispensed(int)"
 });
 formatter.result({
-  "duration": 2327000,
+  "duration": 130000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 32000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 103000,
   "status": "passed"
 });
 formatter.scenario({
@@ -518,10 +771,10 @@ formatter.match({
       "offset": 30
     }
   ],
-  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
+  "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 186000,
+  "duration": 123000,
   "status": "passed"
 });
 formatter.match({
@@ -534,7 +787,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 97000,
+  "duration": 194000,
   "status": "passed"
 });
 formatter.match({
@@ -547,7 +800,11 @@ formatter.match({
   "location": "CashWithdrawTest.$_should_be_dispensed(int)"
 });
 formatter.result({
-  "duration": 85000,
+  "duration": 123000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 2578000,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -636,6 +893,10 @@ formatter.examples({
     }
   ]
 });
+formatter.before({
+  "duration": 107000,
+  "status": "passed"
+});
 formatter.scenario({
   "id": "cash-withdrawal;withdraw-cash-successfully-twice;;2",
   "description": "",
@@ -691,10 +952,10 @@ formatter.match({
       "offset": 30
     }
   ],
-  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
+  "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 121000,
+  "duration": 135000,
   "status": "passed"
 });
 formatter.match({
@@ -707,7 +968,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 85000,
+  "duration": 212000,
   "status": "passed"
 });
 formatter.match({
@@ -720,7 +981,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 87000,
+  "duration": 129000,
   "status": "passed"
 });
 formatter.match({
@@ -733,7 +994,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_should_have_received_$(int)"
 });
 formatter.result({
-  "duration": 162000,
+  "duration": 182000,
   "status": "passed"
 });
 formatter.match({
@@ -743,10 +1004,18 @@ formatter.match({
       "offset": 22
     }
   ],
-  "location": "CashWithdrawTest.my_balance_should_be_$(String)"
+  "location": "CommonTest.my_balance_should_be_$(String)"
 });
 formatter.result({
-  "duration": 1203000,
+  "duration": 142000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 38000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 103000,
   "status": "passed"
 });
 formatter.scenario({
@@ -804,10 +1073,10 @@ formatter.match({
       "offset": 30
     }
   ],
-  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
+  "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 137000,
+  "duration": 89000,
   "status": "passed"
 });
 formatter.match({
@@ -820,7 +1089,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 133000,
+  "duration": 153000,
   "status": "passed"
 });
 formatter.match({
@@ -833,7 +1102,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 93000,
+  "duration": 125000,
   "status": "passed"
 });
 formatter.match({
@@ -846,7 +1115,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_should_have_received_$(int)"
 });
 formatter.result({
-  "duration": 101000,
+  "duration": 88000,
   "status": "passed"
 });
 formatter.match({
@@ -856,10 +1125,18 @@ formatter.match({
       "offset": 22
     }
   ],
-  "location": "CashWithdrawTest.my_balance_should_be_$(String)"
+  "location": "CommonTest.my_balance_should_be_$(String)"
 });
 formatter.result({
-  "duration": 89000,
+  "duration": 70000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 31000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 73000,
   "status": "passed"
 });
 formatter.scenario({
@@ -917,10 +1194,10 @@ formatter.match({
       "offset": 30
     }
   ],
-  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
+  "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 132000,
+  "duration": 90000,
   "status": "passed"
 });
 formatter.match({
@@ -933,7 +1210,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 94000,
+  "duration": 208000,
   "status": "passed"
 });
 formatter.match({
@@ -946,7 +1223,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 117000,
+  "duration": 94000,
   "status": "passed"
 });
 formatter.match({
@@ -959,7 +1236,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_should_have_received_$(int)"
 });
 formatter.result({
-  "duration": 132000,
+  "duration": 93000,
   "status": "passed"
 });
 formatter.match({
@@ -969,10 +1246,14 @@ formatter.match({
       "offset": 22
     }
   ],
-  "location": "CashWithdrawTest.my_balance_should_be_$(String)"
+  "location": "CommonTest.my_balance_should_be_$(String)"
 });
 formatter.result({
-  "duration": 115000,
+  "duration": 81000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 20000,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -1080,6 +1361,10 @@ formatter.examples({
     }
   ]
 });
+formatter.before({
+  "duration": 74000,
+  "status": "passed"
+});
 formatter.scenario({
   "id": "cash-withdrawal;withdraw-cash-unsuccessfully-three-times-in-24-hour-period;;2",
   "description": "",
@@ -1140,10 +1425,10 @@ formatter.match({
       "offset": 30
     }
   ],
-  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
+  "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 135000,
+  "duration": 90000,
   "status": "passed"
 });
 formatter.match({
@@ -1156,7 +1441,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 93000,
+  "duration": 146000,
   "status": "passed"
 });
 formatter.match({
@@ -1169,7 +1454,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 101000,
+  "duration": 83000,
   "status": "passed"
 });
 formatter.match({
@@ -1182,7 +1467,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 80000,
+  "duration": 89000,
   "status": "passed"
 });
 formatter.match({
@@ -1195,14 +1480,22 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 209000,
+  "duration": 222000,
   "status": "passed"
 });
 formatter.match({
   "location": "CashWithdrawTest.a_withdraw_exceed_24hour_exception_occurs()"
 });
 formatter.result({
-  "duration": 45000,
+  "duration": 34000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 24000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 68000,
   "status": "passed"
 });
 formatter.scenario({
@@ -1265,10 +1558,10 @@ formatter.match({
       "offset": 30
     }
   ],
-  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
+  "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 131000,
+  "duration": 85000,
   "status": "passed"
 });
 formatter.match({
@@ -1281,7 +1574,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 78000,
+  "duration": 216000,
   "status": "passed"
 });
 formatter.match({
@@ -1294,7 +1587,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 325000,
+  "duration": 96000,
   "status": "passed"
 });
 formatter.match({
@@ -1307,7 +1600,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 95000,
+  "duration": 141000,
   "status": "passed"
 });
 formatter.match({
@@ -1320,14 +1613,22 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 865000,
+  "duration": 690000,
   "status": "passed"
 });
 formatter.match({
   "location": "CashWithdrawTest.a_withdraw_exceed_24hour_exception_occurs()"
 });
 formatter.result({
-  "duration": 42000,
+  "duration": 32000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 19000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 111000,
   "status": "passed"
 });
 formatter.scenario({
@@ -1390,10 +1691,10 @@ formatter.match({
       "offset": 30
     }
   ],
-  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
+  "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 214000,
+  "duration": 99000,
   "status": "passed"
 });
 formatter.match({
@@ -1406,7 +1707,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 142000,
+  "duration": 434000,
   "status": "passed"
 });
 formatter.match({
@@ -1419,7 +1720,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 126000,
+  "duration": 91000,
   "status": "passed"
 });
 formatter.match({
@@ -1432,7 +1733,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 108000,
+  "duration": 119000,
   "status": "passed"
 });
 formatter.match({
@@ -1445,14 +1746,18 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 192000,
+  "duration": 216000,
   "status": "passed"
 });
 formatter.match({
   "location": "CashWithdrawTest.a_withdraw_exceed_24hour_exception_occurs()"
 });
 formatter.result({
-  "duration": 29000,
+  "duration": 32000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 16000,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -1525,6 +1830,10 @@ formatter.examples({
     }
   ]
 });
+formatter.before({
+  "duration": 105000,
+  "status": "passed"
+});
 formatter.scenario({
   "id": "cash-withdrawal;withdraw-cash-failure-for-more-than-$500-in-a-single-24-hour-period;;2",
   "description": "",
@@ -1561,10 +1870,10 @@ formatter.match({
       "offset": 30
     }
   ],
-  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
+  "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 126000,
+  "duration": 127000,
   "status": "passed"
 });
 formatter.match({
@@ -1577,14 +1886,22 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 163000,
+  "duration": 691000,
   "status": "passed"
 });
 formatter.match({
   "location": "CashWithdrawTest.a_withdraw_exceed_amount_limit_exception_occurs()"
 });
 formatter.result({
-  "duration": 29000,
+  "duration": 50000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 23000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 1264000,
   "status": "passed"
 });
 formatter.scenario({
@@ -1623,10 +1940,10 @@ formatter.match({
       "offset": 30
     }
   ],
-  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
+  "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 135000,
+  "duration": 513000,
   "status": "passed"
 });
 formatter.match({
@@ -1639,14 +1956,22 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 137000,
+  "duration": 209000,
   "status": "passed"
 });
 formatter.match({
   "location": "CashWithdrawTest.a_withdraw_exceed_amount_limit_exception_occurs()"
 });
 formatter.result({
-  "duration": 26000,
+  "duration": 23000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 316000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 66000,
   "status": "passed"
 });
 formatter.scenario({
@@ -1685,10 +2010,10 @@ formatter.match({
       "offset": 30
     }
   ],
-  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
+  "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 133000,
+  "duration": 95000,
   "status": "passed"
 });
 formatter.match({
@@ -1701,14 +2026,18 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 122000,
+  "duration": 183000,
   "status": "passed"
 });
 formatter.match({
   "location": "CashWithdrawTest.a_withdraw_exceed_amount_limit_exception_occurs()"
 });
 formatter.result({
-  "duration": 24000,
+  "duration": 20000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 22000,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -1779,6 +2108,10 @@ formatter.examples({
     }
   ]
 });
+formatter.before({
+  "duration": 52000,
+  "status": "passed"
+});
 formatter.scenario({
   "id": "cash-withdrawal;withdraw-cash-success-for-less-than-$500-in-a-single-24-hour-period;;2",
   "description": "",
@@ -1818,10 +2151,10 @@ formatter.match({
       "offset": 30
     }
   ],
-  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
+  "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 131000,
+  "duration": 79000,
   "status": "passed"
 });
 formatter.match({
@@ -1834,7 +2167,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 118000,
+  "duration": 140000,
   "status": "passed"
 });
 formatter.match({
@@ -1844,10 +2177,18 @@ formatter.match({
       "offset": 22
     }
   ],
-  "location": "CashWithdrawTest.my_balance_should_be_$(String)"
+  "location": "CommonTest.my_balance_should_be_$(String)"
 });
 formatter.result({
-  "duration": 102000,
+  "duration": 60000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 15000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 54000,
   "status": "passed"
 });
 formatter.scenario({
@@ -1889,10 +2230,10 @@ formatter.match({
       "offset": 30
     }
   ],
-  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
+  "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 149000,
+  "duration": 74000,
   "status": "passed"
 });
 formatter.match({
@@ -1905,7 +2246,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 116000,
+  "duration": 324000,
   "status": "passed"
 });
 formatter.match({
@@ -1915,10 +2256,18 @@ formatter.match({
       "offset": 22
     }
   ],
-  "location": "CashWithdrawTest.my_balance_should_be_$(String)"
+  "location": "CommonTest.my_balance_should_be_$(String)"
 });
 formatter.result({
-  "duration": 69000,
+  "duration": 79000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 17000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 60000,
   "status": "passed"
 });
 formatter.scenario({
@@ -1960,10 +2309,10 @@ formatter.match({
       "offset": 30
     }
   ],
-  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
+  "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 1227000,
+  "duration": 100000,
   "status": "passed"
 });
 formatter.match({
@@ -1976,7 +2325,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 190000,
+  "duration": 283000,
   "status": "passed"
 });
 formatter.match({
@@ -1986,10 +2335,14 @@ formatter.match({
       "offset": 22
     }
   ],
-  "location": "CashWithdrawTest.my_balance_should_be_$(String)"
+  "location": "CommonTest.my_balance_should_be_$(String)"
 });
 formatter.result({
-  "duration": 103000,
+  "duration": 98000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 20000,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -2062,6 +2415,10 @@ formatter.examples({
     }
   ]
 });
+formatter.before({
+  "duration": 63000,
+  "status": "passed"
+});
 formatter.scenario({
   "id": "cash-withdrawal;withdraw-cash-failure-for-more-than-account-balance;;2",
   "description": "",
@@ -2098,10 +2455,10 @@ formatter.match({
       "offset": 30
     }
   ],
-  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
+  "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 184000,
+  "duration": 100000,
   "status": "passed"
 });
 formatter.match({
@@ -2114,14 +2471,22 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 182000,
+  "duration": 320000,
   "status": "passed"
 });
 formatter.match({
   "location": "CashWithdrawTest.a_withdraw_exceed_balance_limit_exception_occurs()"
 });
 formatter.result({
-  "duration": 31000,
+  "duration": 49000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 28000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 97000,
   "status": "passed"
 });
 formatter.scenario({
@@ -2160,10 +2525,10 @@ formatter.match({
       "offset": 30
     }
   ],
-  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
+  "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 117000,
+  "duration": 91000,
   "status": "passed"
 });
 formatter.match({
@@ -2176,14 +2541,22 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 112000,
+  "duration": 598000,
   "status": "passed"
 });
 formatter.match({
   "location": "CashWithdrawTest.a_withdraw_exceed_balance_limit_exception_occurs()"
 });
 formatter.result({
-  "duration": 29000,
+  "duration": 38000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 17000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 92000,
   "status": "passed"
 });
 formatter.scenario({
@@ -2222,10 +2595,10 @@ formatter.match({
       "offset": 30
     }
   ],
-  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
+  "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 95000,
+  "duration": 91000,
   "status": "passed"
 });
 formatter.match({
@@ -2238,14 +2611,18 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 269000,
+  "duration": 382000,
   "status": "passed"
 });
 formatter.match({
   "location": "CashWithdrawTest.a_withdraw_exceed_balance_limit_exception_occurs()"
 });
 formatter.result({
-  "duration": 34000,
+  "duration": 36000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 22000,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -2316,6 +2693,10 @@ formatter.examples({
     }
   ]
 });
+formatter.before({
+  "duration": 51000,
+  "status": "passed"
+});
 formatter.scenario({
   "id": "cash-withdrawal;withdraw-cash-success-for-less-than-account-balance;;2",
   "description": "",
@@ -2355,10 +2736,10 @@ formatter.match({
       "offset": 30
     }
   ],
-  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
+  "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 140000,
+  "duration": 76000,
   "status": "passed"
 });
 formatter.match({
@@ -2371,7 +2752,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 87000,
+  "duration": 142000,
   "status": "passed"
 });
 formatter.match({
@@ -2381,10 +2762,18 @@ formatter.match({
       "offset": 22
     }
   ],
-  "location": "CashWithdrawTest.my_balance_should_be_$(String)"
+  "location": "CommonTest.my_balance_should_be_$(String)"
 });
 formatter.result({
-  "duration": 81000,
+  "duration": 133000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 29000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 76000,
   "status": "passed"
 });
 formatter.scenario({
@@ -2426,10 +2815,10 @@ formatter.match({
       "offset": 30
     }
   ],
-  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
+  "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 114000,
+  "duration": 94000,
   "status": "passed"
 });
 formatter.match({
@@ -2442,7 +2831,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 98000,
+  "duration": 171000,
   "status": "passed"
 });
 formatter.match({
@@ -2452,10 +2841,18 @@ formatter.match({
       "offset": 22
     }
   ],
-  "location": "CashWithdrawTest.my_balance_should_be_$(String)"
+  "location": "CommonTest.my_balance_should_be_$(String)"
 });
 formatter.result({
-  "duration": 62000,
+  "duration": 82000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 21000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 69000,
   "status": "passed"
 });
 formatter.scenario({
@@ -2497,10 +2894,10 @@ formatter.match({
       "offset": 30
     }
   ],
-  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
+  "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 171000,
+  "duration": 97000,
   "status": "passed"
 });
 formatter.match({
@@ -2513,7 +2910,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 84000,
+  "duration": 148000,
   "status": "passed"
 });
 formatter.match({
@@ -2523,10 +2920,14 @@ formatter.match({
       "offset": 22
     }
   ],
-  "location": "CashWithdrawTest.my_balance_should_be_$(String)"
+  "location": "CommonTest.my_balance_should_be_$(String)"
 });
 formatter.result({
-  "duration": 71000,
+  "duration": 105000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 31000,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -2554,7 +2955,7 @@ formatter.step({
   "line": 92
 });
 formatter.step({
-  "name": "a withdraw amount exception occurs",
+  "name": "a withdraw amount format exception occurs",
   "keyword": "Then ",
   "line": 93
 });
@@ -2599,6 +3000,10 @@ formatter.examples({
     }
   ]
 });
+formatter.before({
+  "duration": 63000,
+  "status": "passed"
+});
 formatter.scenario({
   "id": "cash-withdrawal;withdraw-cash-failure-for-amount-not-being-a-multiple-of-$10;;2",
   "description": "",
@@ -2624,7 +3029,7 @@ formatter.step({
   ]
 });
 formatter.step({
-  "name": "a withdraw amount exception occurs",
+  "name": "a withdraw amount format exception occurs",
   "keyword": "Then ",
   "line": 93
 });
@@ -2635,10 +3040,10 @@ formatter.match({
       "offset": 30
     }
   ],
-  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
+  "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 119000,
+  "duration": 93000,
   "status": "passed"
 });
 formatter.match({
@@ -2651,14 +3056,22 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 175000,
+  "duration": 305000,
   "status": "passed"
 });
 formatter.match({
-  "location": "CashWithdrawTest.a_withdraw_amount_exception_occurs()"
+  "location": "CashWithdrawTest.a_withdraw_amount_format_exception_occurs()"
 });
 formatter.result({
-  "duration": 33000,
+  "duration": 34000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 15000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 69000,
   "status": "passed"
 });
 formatter.scenario({
@@ -2686,7 +3099,7 @@ formatter.step({
   ]
 });
 formatter.step({
-  "name": "a withdraw amount exception occurs",
+  "name": "a withdraw amount format exception occurs",
   "keyword": "Then ",
   "line": 93
 });
@@ -2697,10 +3110,10 @@ formatter.match({
       "offset": 30
     }
   ],
-  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
+  "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 155000,
+  "duration": 84000,
   "status": "passed"
 });
 formatter.match({
@@ -2713,14 +3126,22 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 129000,
+  "duration": 212000,
   "status": "passed"
 });
 formatter.match({
-  "location": "CashWithdrawTest.a_withdraw_amount_exception_occurs()"
+  "location": "CashWithdrawTest.a_withdraw_amount_format_exception_occurs()"
 });
 formatter.result({
-  "duration": 28000,
+  "duration": 30000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 16000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 91000,
   "status": "passed"
 });
 formatter.scenario({
@@ -2748,7 +3169,7 @@ formatter.step({
   ]
 });
 formatter.step({
-  "name": "a withdraw amount exception occurs",
+  "name": "a withdraw amount format exception occurs",
   "keyword": "Then ",
   "line": 93
 });
@@ -2759,10 +3180,10 @@ formatter.match({
       "offset": 30
     }
   ],
-  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
+  "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 124000,
+  "duration": 73000,
   "status": "passed"
 });
 formatter.match({
@@ -2775,14 +3196,18 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 154000,
+  "duration": 219000,
   "status": "passed"
 });
 formatter.match({
-  "location": "CashWithdrawTest.a_withdraw_amount_exception_occurs()"
+  "location": "CashWithdrawTest.a_withdraw_amount_format_exception_occurs()"
 });
 formatter.result({
-  "duration": 25000,
+  "duration": 27000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 12000,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -2853,6 +3278,10 @@ formatter.examples({
     }
   ]
 });
+formatter.before({
+  "duration": 101000,
+  "status": "passed"
+});
 formatter.scenario({
   "id": "cash-withdrawal;withdraw-cash-success-for-amount-being-a-multiple-of-$10;;2",
   "description": "",
@@ -2892,10 +3321,10 @@ formatter.match({
       "offset": 30
     }
   ],
-  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
+  "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 188000,
+  "duration": 72000,
   "status": "passed"
 });
 formatter.match({
@@ -2908,7 +3337,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 103000,
+  "duration": 131000,
   "status": "passed"
 });
 formatter.match({
@@ -2918,10 +3347,18 @@ formatter.match({
       "offset": 22
     }
   ],
-  "location": "CashWithdrawTest.my_balance_should_be_$(String)"
+  "location": "CommonTest.my_balance_should_be_$(String)"
 });
 formatter.result({
-  "duration": 82000,
+  "duration": 63000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 11000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 52000,
   "status": "passed"
 });
 formatter.scenario({
@@ -2963,10 +3400,10 @@ formatter.match({
       "offset": 30
     }
   ],
-  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
+  "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 114000,
+  "duration": 71000,
   "status": "passed"
 });
 formatter.match({
@@ -2979,7 +3416,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 121000,
+  "duration": 137000,
   "status": "passed"
 });
 formatter.match({
@@ -2989,10 +3426,18 @@ formatter.match({
       "offset": 22
     }
   ],
-  "location": "CashWithdrawTest.my_balance_should_be_$(String)"
+  "location": "CommonTest.my_balance_should_be_$(String)"
 });
 formatter.result({
-  "duration": 113000,
+  "duration": 128000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 23000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 58000,
   "status": "passed"
 });
 formatter.scenario({
@@ -3034,10 +3479,10 @@ formatter.match({
       "offset": 30
     }
   ],
-  "location": "CashWithdrawTest.i_have_a_starting_balance_of_$_in_my_account(Account)"
+  "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 176000,
+  "duration": 103000,
   "status": "passed"
 });
 formatter.match({
@@ -3050,7 +3495,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 121000,
+  "duration": 136000,
   "status": "passed"
 });
 formatter.match({
@@ -3060,10 +3505,251 @@ formatter.match({
       "offset": 22
     }
   ],
-  "location": "CashWithdrawTest.my_balance_should_be_$(String)"
+  "location": "CommonTest.my_balance_should_be_$(String)"
 });
 formatter.result({
-  "duration": 101000,
+  "duration": 132000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 16000,
+  "status": "passed"
+});
+formatter.uri("check_balance.feature");
+formatter.feature({
+  "id": "check-balance",
+  "description": "",
+  "name": "Check balance",
+  "keyword": "Feature",
+  "line": 1
+});
+formatter.scenarioOutline({
+  "id": "check-balance;check-account-balance",
+  "description": "",
+  "name": "Check account balance",
+  "keyword": "Scenario Outline",
+  "line": 3,
+  "type": "scenario_outline"
+});
+formatter.step({
+  "name": "I have a starting balance of $\u003cstart_balance\u003e in my account",
+  "keyword": "Given ",
+  "line": 4
+});
+formatter.step({
+  "name": "my balance should be $\u003cstart_balance\u003e",
+  "keyword": "Then ",
+  "line": 5
+});
+formatter.examples({
+  "id": "check-balance;check-account-balance;",
+  "description": "",
+  "name": "",
+  "keyword": "Examples",
+  "line": 7,
+  "rows": [
+    {
+      "id": "check-balance;check-account-balance;;1",
+      "cells": [
+        "start_balance"
+      ],
+      "line": 8
+    },
+    {
+      "id": "check-balance;check-account-balance;;2",
+      "cells": [
+        "50.00"
+      ],
+      "line": 9
+    },
+    {
+      "id": "check-balance;check-account-balance;;3",
+      "cells": [
+        "100.00"
+      ],
+      "line": 10
+    },
+    {
+      "id": "check-balance;check-account-balance;;4",
+      "cells": [
+        "100.00"
+      ],
+      "line": 11
+    }
+  ]
+});
+formatter.before({
+  "duration": 66000,
+  "status": "passed"
+});
+formatter.scenario({
+  "id": "check-balance;check-account-balance;;2",
+  "description": "",
+  "name": "Check account balance",
+  "keyword": "Scenario Outline",
+  "line": 9,
+  "type": "scenario"
+});
+formatter.step({
+  "name": "I have a starting balance of $50.00 in my account",
+  "keyword": "Given ",
+  "line": 4,
+  "matchedColumns": [
+    0
+  ]
+});
+formatter.step({
+  "name": "my balance should be $50.00",
+  "keyword": "Then ",
+  "line": 5,
+  "matchedColumns": [
+    0
+  ]
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "50.00",
+      "offset": 30
+    }
+  ],
+  "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
+});
+formatter.result({
+  "duration": 69000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "50.00",
+      "offset": 22
+    }
+  ],
+  "location": "CommonTest.my_balance_should_be_$(String)"
+});
+formatter.result({
+  "duration": 369000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 14000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 50000,
+  "status": "passed"
+});
+formatter.scenario({
+  "id": "check-balance;check-account-balance;;3",
+  "description": "",
+  "name": "Check account balance",
+  "keyword": "Scenario Outline",
+  "line": 10,
+  "type": "scenario"
+});
+formatter.step({
+  "name": "I have a starting balance of $100.00 in my account",
+  "keyword": "Given ",
+  "line": 4,
+  "matchedColumns": [
+    0
+  ]
+});
+formatter.step({
+  "name": "my balance should be $100.00",
+  "keyword": "Then ",
+  "line": 5,
+  "matchedColumns": [
+    0
+  ]
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "100.00",
+      "offset": 30
+    }
+  ],
+  "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
+});
+formatter.result({
+  "duration": 61000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "100.00",
+      "offset": 22
+    }
+  ],
+  "location": "CommonTest.my_balance_should_be_$(String)"
+});
+formatter.result({
+  "duration": 79000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 20000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 50000,
+  "status": "passed"
+});
+formatter.scenario({
+  "id": "check-balance;check-account-balance;;4",
+  "description": "",
+  "name": "Check account balance",
+  "keyword": "Scenario Outline",
+  "line": 11,
+  "type": "scenario"
+});
+formatter.step({
+  "name": "I have a starting balance of $100.00 in my account",
+  "keyword": "Given ",
+  "line": 4,
+  "matchedColumns": [
+    0
+  ]
+});
+formatter.step({
+  "name": "my balance should be $100.00",
+  "keyword": "Then ",
+  "line": 5,
+  "matchedColumns": [
+    0
+  ]
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "100.00",
+      "offset": 30
+    }
+  ],
+  "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
+});
+formatter.result({
+  "duration": 73000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "100.00",
+      "offset": 22
+    }
+  ],
+  "location": "CommonTest.my_balance_should_be_$(String)"
+});
+formatter.result({
+  "duration": 46000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 11000,
   "status": "passed"
 });
 });

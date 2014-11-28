@@ -90,7 +90,7 @@ Feature: Cash Withdrawal
   Scenario Outline: Withdraw cash failure for amount not being a multiple of $10
     Given I have a starting balance of $<start_balance> in my account
     When I withdraw $<amount>
-    Then a withdraw amount exception occurs
+    Then a withdraw amount format exception occurs
 
     Examples: 
       | start_balance | amount |

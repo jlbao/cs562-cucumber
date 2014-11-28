@@ -1,7 +1,8 @@
 package account;
 
 import exception.AccountException;
-import exception.WithdrawAmountException;
+import exception.DepositAmountException;
+import exception.WithdrawAmountFormatException;
 import exception.WithdrawAmountLimitException;
 import exception.WithdrawExceedBalanceException;
 import exception.WithdrawTimesLimitException;
@@ -18,24 +19,38 @@ public class Account {
 
 	private int lastWithdrawAmount;
 
+	private double lastDepositAmount;
+
 	private int countWithdrawInLast24Hours;
 
 	private AccountException lastException;
+
+	public Account() {
+	}
 
 	public Account(double balance) {
 		this.balance = balance;
 	}
 
-	public void withdrawMoney(int amount)
-			throws WithdrawExceedBalanceException, WithdrawTimesLimitException,
-			WithdrawAmountLimitException, WithdrawAmountException {
+	/**
+	 * Withdraw money from account
+	 * 
+	 * @param amount
+	 * @throws WithdrawExceedBalanceException
+	 * @throws WithdrawTimesLimitException
+	 * @throws WithdrawAmountLimitException
+	 * @throws WithdrawAmountFormatException
+	 */
+	public void withdraw(int amount) throws WithdrawExceedBalanceException,
+			WithdrawTimesLimitException, WithdrawAmountLimitException,
+			WithdrawAmountFormatException {
 		if (balance < amount) {
 			lastException = new WithdrawExceedBalanceException();
 			throw (WithdrawExceedBalanceException) lastException;
 		}
 		if (amount < 10 || amount % 10 != 0) {
-			lastException = new WithdrawAmountException();
-			throw (WithdrawAmountException) lastException;
+			lastException = new WithdrawAmountFormatException();
+			throw (WithdrawAmountFormatException) lastException;
 		}
 		if (amount + amountWithdrawInLast24Hours > Account.MAX_WITHDRAW_AMOUNT_LIMIT) {
 			lastException = new WithdrawAmountLimitException();
@@ -51,7 +66,23 @@ public class Account {
 		this.lastWithdrawAmount = amount;
 	}
 
+	/**
+	 * Deposit money to account
+	 * 
+	 * @param amount
+	 * @throws DepositAmountException
+	 */
+	public void deposit(double amount) throws DepositAmountException {
+		if (amount < 0) {
+			lastException = new DepositAmountException();
+			throw (DepositAmountException) lastException;
+		}
+		this.balance += amount;
+		this.lastDepositAmount = amount;
+	}
+
 	// getters and setters
+
 	public double getBalance() {
 		return balance;
 	}
@@ -90,6 +121,14 @@ public class Account {
 
 	public void setLastWithdrawAmount(int lastWithdrawAmount) {
 		this.lastWithdrawAmount = lastWithdrawAmount;
+	}
+
+	public double getLastDepositAmount() {
+		return lastDepositAmount;
+	}
+
+	public void setLastDepositAmount(double lastDepositAmount) {
+		this.lastDepositAmount = lastDepositAmount;
 	}
 
 }
