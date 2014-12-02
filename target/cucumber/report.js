@@ -75,7 +75,7 @@ formatter.examples({
   ]
 });
 formatter.before({
-  "duration": 185000,
+  "duration": 329000,
   "status": "passed"
 });
 formatter.scenario({
@@ -120,7 +120,7 @@ formatter.match({
   "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 134176000,
+  "duration": 157536000,
   "status": "passed"
 });
 formatter.match({
@@ -133,7 +133,7 @@ formatter.match({
   "location": "CashDepositTest.i_deposit_$(String)"
 });
 formatter.result({
-  "duration": 161000,
+  "duration": 246000,
   "status": "passed"
 });
 formatter.match({
@@ -146,15 +146,15 @@ formatter.match({
   "location": "CommonTest.my_balance_should_be_$(String)"
 });
 formatter.result({
-  "duration": 1741000,
+  "duration": 3495000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 27000,
+  "duration": 378000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 84000,
+  "duration": 86000,
   "status": "passed"
 });
 formatter.scenario({
@@ -199,7 +199,7 @@ formatter.match({
   "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 84000,
+  "duration": 112000,
   "status": "passed"
 });
 formatter.match({
@@ -212,7 +212,7 @@ formatter.match({
   "location": "CashDepositTest.i_deposit_$(String)"
 });
 formatter.result({
-  "duration": 120000,
+  "duration": 132000,
   "status": "passed"
 });
 formatter.match({
@@ -225,15 +225,15 @@ formatter.match({
   "location": "CommonTest.my_balance_should_be_$(String)"
 });
 formatter.result({
-  "duration": 180000,
+  "duration": 81000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14000,
+  "duration": 13000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 75000,
+  "duration": 73000,
   "status": "passed"
 });
 formatter.scenario({
@@ -278,7 +278,7 @@ formatter.match({
   "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 82000,
+  "duration": 116000,
   "status": "passed"
 });
 formatter.match({
@@ -291,7 +291,7 @@ formatter.match({
   "location": "CashDepositTest.i_deposit_$(String)"
 });
 formatter.result({
-  "duration": 236000,
+  "duration": 235000,
   "status": "passed"
 });
 formatter.match({
@@ -304,11 +304,11 @@ formatter.match({
   "location": "CommonTest.my_balance_should_be_$(String)"
 });
 formatter.result({
-  "duration": 253000,
+  "duration": 98000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 57000,
+  "duration": 23000,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -376,7 +376,7 @@ formatter.examples({
   ]
 });
 formatter.before({
-  "duration": 82000,
+  "duration": 177000,
   "status": "passed"
 });
 formatter.scenario({
@@ -418,7 +418,7 @@ formatter.match({
   "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 91000,
+  "duration": 86000,
   "status": "passed"
 });
 formatter.match({
@@ -431,22 +431,22 @@ formatter.match({
   "location": "CashDepositTest.i_deposit_$(String)"
 });
 formatter.result({
-  "duration": 328000,
+  "duration": 332000,
   "status": "passed"
 });
 formatter.match({
   "location": "CashDepositTest.a_deposit_amount_exception_occurs()"
 });
 formatter.result({
-  "duration": 33000,
+  "duration": 48000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 17000,
+  "duration": 55000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 73000,
+  "duration": 66000,
   "status": "passed"
 });
 formatter.scenario({
@@ -488,7 +488,7 @@ formatter.match({
   "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 84000,
+  "duration": 97000,
   "status": "passed"
 });
 formatter.match({
@@ -501,22 +501,22 @@ formatter.match({
   "location": "CashDepositTest.i_deposit_$(String)"
 });
 formatter.result({
-  "duration": 186000,
+  "duration": 443000,
   "status": "passed"
 });
 formatter.match({
   "location": "CashDepositTest.a_deposit_amount_exception_occurs()"
 });
 formatter.result({
-  "duration": 20000,
+  "duration": 22000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 27000,
+  "duration": 14000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 165000,
+  "duration": 112000,
   "status": "passed"
 });
 formatter.scenario({
@@ -558,7 +558,7 @@ formatter.match({
   "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 88000,
+  "duration": 642000,
   "status": "passed"
 });
 formatter.match({
@@ -571,18 +571,18 @@ formatter.match({
   "location": "CashDepositTest.i_deposit_$(String)"
 });
 formatter.result({
-  "duration": 238000,
+  "duration": 276000,
   "status": "passed"
 });
 formatter.match({
   "location": "CashDepositTest.a_deposit_amount_exception_occurs()"
 });
 formatter.result({
-  "duration": 25000,
+  "duration": 32000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 31000,
+  "duration": 24000,
   "status": "passed"
 });
 formatter.uri("cash_withdrawal.feature");
@@ -650,7 +650,7 @@ formatter.examples({
   ]
 });
 formatter.before({
-  "duration": 80000,
+  "duration": 113000,
   "status": "passed"
 });
 formatter.scenario({
@@ -695,7 +695,7 @@ formatter.match({
   "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 91000,
+  "duration": 82000,
   "status": "passed"
 });
 formatter.match({
@@ -708,7 +708,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 1190000,
+  "duration": 1265000,
   "status": "passed"
 });
 formatter.match({
@@ -721,7 +721,7 @@ formatter.match({
   "location": "CashWithdrawTest.$_should_be_dispensed(int)"
 });
 formatter.result({
-  "duration": 112000,
+  "duration": 143000,
   "status": "passed"
 });
 formatter.after({
@@ -729,7 +729,7 @@ formatter.after({
   "status": "passed"
 });
 formatter.before({
-  "duration": 59000,
+  "duration": 67000,
   "status": "passed"
 });
 formatter.scenario({
@@ -774,7 +774,7 @@ formatter.match({
   "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 88000,
+  "duration": 86000,
   "status": "passed"
 });
 formatter.match({
@@ -787,7 +787,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 171000,
+  "duration": 152000,
   "status": "passed"
 });
 formatter.match({
@@ -800,11 +800,11 @@ formatter.match({
   "location": "CashWithdrawTest.$_should_be_dispensed(int)"
 });
 formatter.result({
-  "duration": 80000,
+  "duration": 78000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 20000,
+  "duration": 17000,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -894,7 +894,7 @@ formatter.examples({
   ]
 });
 formatter.before({
-  "duration": 57000,
+  "duration": 68000,
   "status": "passed"
 });
 formatter.scenario({
@@ -955,7 +955,7 @@ formatter.match({
   "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 80000,
+  "duration": 97000,
   "status": "passed"
 });
 formatter.match({
@@ -968,7 +968,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 145000,
+  "duration": 150000,
   "status": "passed"
 });
 formatter.match({
@@ -981,7 +981,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 110000,
+  "duration": 114000,
   "status": "passed"
 });
 formatter.match({
@@ -994,7 +994,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_should_have_received_$(int)"
 });
 formatter.result({
-  "duration": 150000,
+  "duration": 103000,
   "status": "passed"
 });
 formatter.match({
@@ -1007,7 +1007,7 @@ formatter.match({
   "location": "CommonTest.my_balance_should_be_$(String)"
 });
 formatter.result({
-  "duration": 159000,
+  "duration": 144000,
   "status": "passed"
 });
 formatter.after({
@@ -1015,7 +1015,7 @@ formatter.after({
   "status": "passed"
 });
 formatter.before({
-  "duration": 68000,
+  "duration": 116000,
   "status": "passed"
 });
 formatter.scenario({
@@ -1076,7 +1076,7 @@ formatter.match({
   "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 84000,
+  "duration": 123000,
   "status": "passed"
 });
 formatter.match({
@@ -1089,7 +1089,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 174000,
+  "duration": 166000,
   "status": "passed"
 });
 formatter.match({
@@ -1102,7 +1102,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 110000,
+  "duration": 86000,
   "status": "passed"
 });
 formatter.match({
@@ -1115,7 +1115,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_should_have_received_$(int)"
 });
 formatter.result({
-  "duration": 85000,
+  "duration": 75000,
   "status": "passed"
 });
 formatter.match({
@@ -1128,15 +1128,15 @@ formatter.match({
   "location": "CommonTest.my_balance_should_be_$(String)"
 });
 formatter.result({
-  "duration": 85000,
+  "duration": 71000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 16000,
+  "duration": 14000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 102000,
+  "duration": 64000,
   "status": "passed"
 });
 formatter.scenario({
@@ -1197,7 +1197,7 @@ formatter.match({
   "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 88000,
+  "duration": 78000,
   "status": "passed"
 });
 formatter.match({
@@ -1210,7 +1210,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 137000,
+  "duration": 133000,
   "status": "passed"
 });
 formatter.match({
@@ -1223,7 +1223,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 71000,
+  "duration": 72000,
   "status": "passed"
 });
 formatter.match({
@@ -1236,7 +1236,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_should_have_received_$(int)"
 });
 formatter.result({
-  "duration": 86000,
+  "duration": 69000,
   "status": "passed"
 });
 formatter.match({
@@ -1249,11 +1249,11 @@ formatter.match({
   "location": "CommonTest.my_balance_should_be_$(String)"
 });
 formatter.result({
-  "duration": 74000,
+  "duration": 61000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 18000,
+  "duration": 42000,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -1362,7 +1362,7 @@ formatter.examples({
   ]
 });
 formatter.before({
-  "duration": 67000,
+  "duration": 116000,
   "status": "passed"
 });
 formatter.scenario({
@@ -1441,7 +1441,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 239000,
+  "duration": 229000,
   "status": "passed"
 });
 formatter.match({
@@ -1454,7 +1454,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 91000,
+  "duration": 106000,
   "status": "passed"
 });
 formatter.match({
@@ -1467,7 +1467,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 72000,
+  "duration": 73000,
   "status": "passed"
 });
 formatter.match({
@@ -1480,22 +1480,22 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 17178692000,
+  "duration": 194000,
   "status": "passed"
 });
 formatter.match({
   "location": "CashWithdrawTest.a_withdraw_exceed_24hour_exception_occurs()"
 });
 formatter.result({
-  "duration": 72000,
+  "duration": 37000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 39000,
+  "duration": 24000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 75000,
+  "duration": 65000,
   "status": "passed"
 });
 formatter.scenario({
@@ -1561,7 +1561,7 @@ formatter.match({
   "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 97000,
+  "duration": 78000,
   "status": "passed"
 });
 formatter.match({
@@ -1574,7 +1574,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 172000,
+  "duration": 144000,
   "status": "passed"
 });
 formatter.match({
@@ -1587,7 +1587,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 159000,
+  "duration": 68000,
   "status": "passed"
 });
 formatter.match({
@@ -1600,7 +1600,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 115000,
+  "duration": 66000,
   "status": "passed"
 });
 formatter.match({
@@ -1613,22 +1613,22 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 345190000,
+  "duration": 650000,
   "status": "passed"
 });
 formatter.match({
   "location": "CashWithdrawTest.a_withdraw_exceed_24hour_exception_occurs()"
 });
 formatter.result({
-  "duration": 40000,
+  "duration": 19000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 22000,
+  "duration": 13000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 175000,
+  "duration": 102000,
   "status": "passed"
 });
 formatter.scenario({
@@ -1694,7 +1694,7 @@ formatter.match({
   "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 86000,
+  "duration": 113000,
   "status": "passed"
 });
 formatter.match({
@@ -1707,7 +1707,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 150000,
+  "duration": 159000,
   "status": "passed"
 });
 formatter.match({
@@ -1720,7 +1720,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 80000,
+  "duration": 223000,
   "status": "passed"
 });
 formatter.match({
@@ -1733,7 +1733,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 86000,
+  "duration": 106000,
   "status": "passed"
 });
 formatter.match({
@@ -1746,18 +1746,18 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 6752229000,
+  "duration": 130000,
   "status": "passed"
 });
 formatter.match({
   "location": "CashWithdrawTest.a_withdraw_exceed_24hour_exception_occurs()"
 });
 formatter.result({
-  "duration": 51000,
+  "duration": 37000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 18000,
+  "duration": 27000,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -1831,7 +1831,7 @@ formatter.examples({
   ]
 });
 formatter.before({
-  "duration": 105000,
+  "duration": 100000,
   "status": "passed"
 });
 formatter.scenario({
@@ -1873,7 +1873,7 @@ formatter.match({
   "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 125000,
+  "duration": 84000,
   "status": "passed"
 });
 formatter.match({
@@ -1886,22 +1886,22 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 371000,
+  "duration": 239000,
   "status": "passed"
 });
 formatter.match({
   "location": "CashWithdrawTest.a_withdraw_exceed_amount_limit_exception_occurs()"
 });
 formatter.result({
-  "duration": 51000,
+  "duration": 44000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 32000,
+  "duration": 25000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 758000,
+  "duration": 1008000,
   "status": "passed"
 });
 formatter.scenario({
@@ -1943,7 +1943,7 @@ formatter.match({
   "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 423000,
+  "duration": 685000,
   "status": "passed"
 });
 formatter.match({
@@ -1956,22 +1956,22 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 214000,
+  "duration": 382000,
   "status": "passed"
 });
 formatter.match({
   "location": "CashWithdrawTest.a_withdraw_exceed_amount_limit_exception_occurs()"
 });
 formatter.result({
-  "duration": 58000,
+  "duration": 39000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 330000,
+  "duration": 569000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 95000,
+  "duration": 66000,
   "status": "passed"
 });
 formatter.scenario({
@@ -2013,7 +2013,7 @@ formatter.match({
   "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 95000,
+  "duration": 96000,
   "status": "passed"
 });
 formatter.match({
@@ -2026,18 +2026,18 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 222000,
+  "duration": 253000,
   "status": "passed"
 });
 formatter.match({
   "location": "CashWithdrawTest.a_withdraw_exceed_amount_limit_exception_occurs()"
 });
 formatter.result({
-  "duration": 41000,
+  "duration": 27000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 59000,
+  "duration": 22000,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -2109,7 +2109,7 @@ formatter.examples({
   ]
 });
 formatter.before({
-  "duration": 66000,
+  "duration": 64000,
   "status": "passed"
 });
 formatter.scenario({
@@ -2154,7 +2154,7 @@ formatter.match({
   "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 79000,
+  "duration": 71000,
   "status": "passed"
 });
 formatter.match({
@@ -2167,7 +2167,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 132000,
+  "duration": 141000,
   "status": "passed"
 });
 formatter.match({
@@ -2180,15 +2180,15 @@ formatter.match({
   "location": "CommonTest.my_balance_should_be_$(String)"
 });
 formatter.result({
-  "duration": 56000,
+  "duration": 59000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 12000,
+  "duration": 13000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 260000,
+  "duration": 97000,
   "status": "passed"
 });
 formatter.scenario({
@@ -2233,7 +2233,7 @@ formatter.match({
   "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 107000,
+  "duration": 110000,
   "status": "passed"
 });
 formatter.match({
@@ -2246,7 +2246,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 213000,
+  "duration": 251000,
   "status": "passed"
 });
 formatter.match({
@@ -2259,15 +2259,15 @@ formatter.match({
   "location": "CommonTest.my_balance_should_be_$(String)"
 });
 formatter.result({
-  "duration": 75000,
+  "duration": 108000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 21000,
+  "duration": 20000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 87000,
+  "duration": 52000,
   "status": "passed"
 });
 formatter.scenario({
@@ -2312,7 +2312,7 @@ formatter.match({
   "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 113000,
+  "duration": 76000,
   "status": "passed"
 });
 formatter.match({
@@ -2325,7 +2325,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 214000,
+  "duration": 137000,
   "status": "passed"
 });
 formatter.match({
@@ -2338,11 +2338,11 @@ formatter.match({
   "location": "CommonTest.my_balance_should_be_$(String)"
 });
 formatter.result({
-  "duration": 116000,
+  "duration": 99000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 18000,
+  "duration": 47000,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -2416,7 +2416,7 @@ formatter.examples({
   ]
 });
 formatter.before({
-  "duration": 58000,
+  "duration": 65000,
   "status": "passed"
 });
 formatter.scenario({
@@ -2458,7 +2458,7 @@ formatter.match({
   "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 75000,
+  "duration": 71000,
   "status": "passed"
 });
 formatter.match({
@@ -2471,22 +2471,22 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 396000,
+  "duration": 224000,
   "status": "passed"
 });
 formatter.match({
   "location": "CashWithdrawTest.a_withdraw_exceed_balance_limit_exception_occurs()"
 });
 formatter.result({
-  "duration": 53000,
+  "duration": 31000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 27000,
+  "duration": 16000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 50000,
+  "duration": 96000,
   "status": "passed"
 });
 formatter.scenario({
@@ -2528,7 +2528,7 @@ formatter.match({
   "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 79000,
+  "duration": 104000,
   "status": "passed"
 });
 formatter.match({
@@ -2541,22 +2541,22 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 512000,
+  "duration": 489000,
   "status": "passed"
 });
 formatter.match({
   "location": "CashWithdrawTest.a_withdraw_exceed_balance_limit_exception_occurs()"
 });
 formatter.result({
-  "duration": 26000,
+  "duration": 30000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 23000,
+  "duration": 18000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 69000,
+  "duration": 97000,
   "status": "passed"
 });
 formatter.scenario({
@@ -2598,7 +2598,7 @@ formatter.match({
   "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 74000,
+  "duration": 72000,
   "status": "passed"
 });
 formatter.match({
@@ -2611,18 +2611,18 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 235000,
+  "duration": 604000,
   "status": "passed"
 });
 formatter.match({
   "location": "CashWithdrawTest.a_withdraw_exceed_balance_limit_exception_occurs()"
 });
 formatter.result({
-  "duration": 44000,
+  "duration": 34000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 31000,
+  "duration": 19000,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -2694,7 +2694,7 @@ formatter.examples({
   ]
 });
 formatter.before({
-  "duration": 60000,
+  "duration": 63000,
   "status": "passed"
 });
 formatter.scenario({
@@ -2739,7 +2739,7 @@ formatter.match({
   "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 109000,
+  "duration": 68000,
   "status": "passed"
 });
 formatter.match({
@@ -2752,7 +2752,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 207000,
+  "duration": 138000,
   "status": "passed"
 });
 formatter.match({
@@ -2765,15 +2765,15 @@ formatter.match({
   "location": "CommonTest.my_balance_should_be_$(String)"
 });
 formatter.result({
-  "duration": 106000,
+  "duration": 109000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 22000,
+  "duration": 20000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 105000,
+  "duration": 77000,
   "status": "passed"
 });
 formatter.scenario({
@@ -2818,7 +2818,7 @@ formatter.match({
   "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 99000,
+  "duration": 106000,
   "status": "passed"
 });
 formatter.match({
@@ -2831,7 +2831,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 198000,
+  "duration": 162000,
   "status": "passed"
 });
 formatter.match({
@@ -2844,15 +2844,15 @@ formatter.match({
   "location": "CommonTest.my_balance_should_be_$(String)"
 });
 formatter.result({
-  "duration": 115000,
+  "duration": 123000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 25000,
+  "duration": 30000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 61000,
+  "duration": 101000,
   "status": "passed"
 });
 formatter.scenario({
@@ -2897,7 +2897,7 @@ formatter.match({
   "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 92000,
+  "duration": 115000,
   "status": "passed"
 });
 formatter.match({
@@ -2910,7 +2910,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 153000,
+  "duration": 205000,
   "status": "passed"
 });
 formatter.match({
@@ -2923,11 +2923,11 @@ formatter.match({
   "location": "CommonTest.my_balance_should_be_$(String)"
 });
 formatter.result({
-  "duration": 103000,
+  "duration": 111000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 25000,
+  "duration": 23000,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -3001,7 +3001,7 @@ formatter.examples({
   ]
 });
 formatter.before({
-  "duration": 65000,
+  "duration": 95000,
   "status": "passed"
 });
 formatter.scenario({
@@ -3043,7 +3043,7 @@ formatter.match({
   "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 75000,
+  "duration": 97000,
   "status": "passed"
 });
 formatter.match({
@@ -3056,22 +3056,22 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 265000,
+  "duration": 310000,
   "status": "passed"
 });
 formatter.match({
   "location": "CashWithdrawTest.a_withdraw_amount_format_exception_occurs()"
 });
 formatter.result({
-  "duration": 36000,
+  "duration": 46000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 24000,
+  "duration": 25000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 90000,
+  "duration": 94000,
   "status": "passed"
 });
 formatter.scenario({
@@ -3113,7 +3113,7 @@ formatter.match({
   "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 100000,
+  "duration": 113000,
   "status": "passed"
 });
 formatter.match({
@@ -3126,7 +3126,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 206000,
+  "duration": 217000,
   "status": "passed"
 });
 formatter.match({
@@ -3137,11 +3137,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.after({
-  "duration": 14000,
+  "duration": 16000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 67000,
+  "duration": 91000,
   "status": "passed"
 });
 formatter.scenario({
@@ -3183,7 +3183,7 @@ formatter.match({
   "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 79000,
+  "duration": 73000,
   "status": "passed"
 });
 formatter.match({
@@ -3196,18 +3196,18 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 193000,
+  "duration": 181000,
   "status": "passed"
 });
 formatter.match({
   "location": "CashWithdrawTest.a_withdraw_amount_format_exception_occurs()"
 });
 formatter.result({
-  "duration": 28000,
+  "duration": 41000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 22000,
+  "duration": 41000,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -3279,7 +3279,7 @@ formatter.examples({
   ]
 });
 formatter.before({
-  "duration": 73000,
+  "duration": 86000,
   "status": "passed"
 });
 formatter.scenario({
@@ -3324,7 +3324,7 @@ formatter.match({
   "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 67000,
+  "duration": 76000,
   "status": "passed"
 });
 formatter.match({
@@ -3337,7 +3337,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 138000,
+  "duration": 156000,
   "status": "passed"
 });
 formatter.match({
@@ -3350,15 +3350,15 @@ formatter.match({
   "location": "CommonTest.my_balance_should_be_$(String)"
 });
 formatter.result({
-  "duration": 55000,
+  "duration": 66000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14000,
+  "duration": 13000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 47000,
+  "duration": 46000,
   "status": "passed"
 });
 formatter.scenario({
@@ -3403,7 +3403,7 @@ formatter.match({
   "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 56000,
+  "duration": 65000,
   "status": "passed"
 });
 formatter.match({
@@ -3416,7 +3416,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 220000,
+  "duration": 563000,
   "status": "passed"
 });
 formatter.match({
@@ -3429,15 +3429,15 @@ formatter.match({
   "location": "CommonTest.my_balance_should_be_$(String)"
 });
 formatter.result({
-  "duration": 188000,
+  "duration": 74000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 18000,
+  "duration": 12000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 61000,
+  "duration": 68000,
   "status": "passed"
 });
 formatter.scenario({
@@ -3482,7 +3482,7 @@ formatter.match({
   "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 76000,
+  "duration": 127000,
   "status": "passed"
 });
 formatter.match({
@@ -3495,7 +3495,7 @@ formatter.match({
   "location": "CashWithdrawTest.i_withdraw_$(int)"
 });
 formatter.result({
-  "duration": 180000,
+  "duration": 235000,
   "status": "passed"
 });
 formatter.match({
@@ -3508,11 +3508,11 @@ formatter.match({
   "location": "CommonTest.my_balance_should_be_$(String)"
 });
 formatter.result({
-  "duration": 149000,
+  "duration": 106000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 19000,
+  "duration": 30000,
   "status": "passed"
 });
 formatter.uri("check_balance.feature");
@@ -3579,7 +3579,7 @@ formatter.examples({
   ]
 });
 formatter.before({
-  "duration": 59000,
+  "duration": 58000,
   "status": "passed"
 });
 formatter.scenario({
@@ -3616,7 +3616,7 @@ formatter.match({
   "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 73000,
+  "duration": 65000,
   "status": "passed"
 });
 formatter.match({
@@ -3629,15 +3629,15 @@ formatter.match({
   "location": "CommonTest.my_balance_should_be_$(String)"
 });
 formatter.result({
-  "duration": 477000,
+  "duration": 487000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 42000,
+  "duration": 19000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 103000,
+  "duration": 53000,
   "status": "passed"
 });
 formatter.scenario({
@@ -3674,7 +3674,7 @@ formatter.match({
   "location": "CommonTest.i_have_a_starting_balance_of_$_in_my_account(String)"
 });
 formatter.result({
-  "duration": 74000,
+  "duration": 66000,
   "status": "passed"
 });
 formatter.match({
@@ -3687,15 +3687,15 @@ formatter.match({
   "location": "CommonTest.my_balance_should_be_$(String)"
 });
 formatter.result({
-  "duration": 78000,
+  "duration": 161000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 23000,
+  "duration": 31000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 53000,
+  "duration": 52000,
   "status": "passed"
 });
 formatter.scenario({
@@ -3745,11 +3745,11 @@ formatter.match({
   "location": "CommonTest.my_balance_should_be_$(String)"
 });
 formatter.result({
-  "duration": 47000,
+  "duration": 48000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14000,
+  "duration": 11000,
   "status": "passed"
 });
 });
