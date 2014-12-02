@@ -1,5 +1,9 @@
 package account;
 
+import java.util.Date;
+import java.util.LinkedList;
+import java.util.List;
+
 import exception.AccountException;
 import exception.DepositAmountException;
 import exception.WithdrawAmountFormatException;
@@ -21,14 +25,16 @@ public class Account {
 
 	private double lastDepositAmount;
 
-	private int countWithdrawInLast24Hours;
+	private List<Date> last24HourWithdrawDateList;
 
 	private AccountException lastException;
 
 	public Account() {
+		this.last24HourWithdrawDateList = new LinkedList<Date>();
 	}
 
 	public Account(double balance) {
+		this();
 		this.balance = balance;
 	}
 
@@ -56,14 +62,21 @@ public class Account {
 			lastException = new WithdrawAmountLimitException();
 			throw (WithdrawAmountLimitException) lastException;
 		}
-		if (countWithdrawInLast24Hours == Account.MAX_WITHDRAW_TIMES_24HOURS) {
+
+		int last24hourWithdrawTimes = getLast24HourWithDrawTimes();
+		while (last24HourWithdrawDateList.size() > last24hourWithdrawTimes) {
+			// only keep last 24-hour withdraw date time
+			last24HourWithdrawDateList.remove(0);
+		}
+		if (last24hourWithdrawTimes >= MAX_WITHDRAW_TIMES_24HOURS) {
 			lastException = new WithdrawTimesLimitException();
 			throw (WithdrawTimesLimitException) lastException;
 		}
+
 		this.amountWithdrawInLast24Hours += amount;
-		this.countWithdrawInLast24Hours++;
 		this.balance -= amount;
 		this.lastWithdrawAmount = amount;
+		this.last24HourWithdrawDateList.add(new Date());
 	}
 
 	/**
@@ -83,6 +96,17 @@ public class Account {
 
 	// getters and setters
 
+	public int getLast24HourWithDrawTimes() {
+		int last24hourWithdrawTimes = 0;
+		for (Date date : last24HourWithdrawDateList) {
+			long interval = System.currentTimeMillis() - date.getTime();
+			if (interval < 24 * 3600 * 1000) {
+				last24hourWithdrawTimes++;
+			}
+		}
+		return last24hourWithdrawTimes;
+	}
+
 	public double getBalance() {
 		return balance;
 	}
@@ -97,14 +121,6 @@ public class Account {
 
 	public void setAmountWithdrawInLast24Hours(int amountWithdrawInLast24Hours) {
 		this.amountWithdrawInLast24Hours = amountWithdrawInLast24Hours;
-	}
-
-	public int getCountWithdrawInLast24Hours() {
-		return countWithdrawInLast24Hours;
-	}
-
-	public void setCountWithdrawInLast24Hours(int countWithdrawInLast24Hours) {
-		this.countWithdrawInLast24Hours = countWithdrawInLast24Hours;
 	}
 
 	public AccountException getLastException() {
